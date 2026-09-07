@@ -18,7 +18,7 @@ import { Card } from '@/components/ui/card';
 import { Avatar } from '@/components/explorer/Avatar';
 import { flagEmoji } from '@/components/explorer/format';
 import { useCountUp } from '@/hooks/useCountUp';
-import { Waves, Users, Flame, Globe2, Trophy, Swords, Wind, Award, Zap, Sparkles, ShieldCheck, Repeat, Layers, Compass, Scale, Percent, type LucideIcon } from 'lucide-react';
+import { Waves, Users, Flame, Globe2, Trophy, Swords, Wind, Award, Zap, Sparkles, ShieldCheck, Repeat, Layers, Compass, Scale, type LucideIcon } from 'lucide-react';
 
 const STAT_ICONS = { competitions: Trophy, uniqueRiders: Users, heats: Flame, countries: Globe2 };
 const RESULT_ICON: Record<string, string> = { Champion: '🏆', 'Runner-up': '🥈', '2nd place': '🥈', '3rd place': '🥉' };
@@ -35,7 +35,6 @@ const INSIGHT_STYLE: Record<string, { icon: LucideIcon; color: string }> = {
   'Most consistent rider': { icon: ShieldCheck, color: 'text-teal-400 bg-teal-400/10' },
   'Longest win streak': { icon: Repeat, color: 'text-lime-400 bg-lime-400/10' },
   'Most balanced event': { icon: Scale, color: 'text-cyan-400 bg-cyan-400/10' },
-  'Brand win rate': { icon: Percent, color: 'text-rose-400 bg-rose-400/10' },
 };
 
 const CONCENTRATION_STYLE: Record<string, { icon: LucideIcon; color: string }> = {
@@ -50,7 +49,7 @@ const COMPOSITION_FOR_LABEL: Record<string, () => CompositionSegment[]> = {
 
 const COMPOSITION_PALETTE = ['#f2661a', '#3987e5', '#2ea36b', '#c9578f', '#c9a227', '#5b6472'];
 
-function CompositionBar({ segments }: { segments: CompositionSegment[] }) {
+function CompositionBar({ segments, flags }: { segments: CompositionSegment[]; flags?: boolean }) {
   const total = segments.reduce((sum, s) => sum + s.count, 0);
   return (
     <div>
@@ -67,7 +66,7 @@ function CompositionBar({ segments }: { segments: CompositionSegment[] }) {
         {segments.map((s, i) => (
           <div key={s.label} className="flex items-center gap-1 text-[11px] text-muted-foreground">
             <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: COMPOSITION_PALETTE[i % COMPOSITION_PALETTE.length] }} />
-            {s.label} <span className="text-foreground font-medium">{s.count}</span>
+            {flags && flagEmoji(s.label)} {s.label} <span className="text-foreground font-medium">{s.count}</span>
           </div>
         ))}
       </div>
@@ -126,7 +125,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 max-w-4xl py-16">
         <div className="rise-in text-xs font-mono tracking-widest uppercase text-muted-foreground mb-3 flex items-center gap-2">
-          <Waves className="w-3.5 h-3.5" /> Megaloop
+          <Waves className="w-3.5 h-3.5" /> Home
         </div>
         <h1 className="rise-in font-display text-4xl md:text-5xl font-bold mb-4 leading-tight" style={{ animationDelay: '60ms' }}>
           Where kitesurf data <span className="text-primary">tells the story.</span>
@@ -322,7 +321,7 @@ export default function Home() {
                 <div className="text-sm text-foreground/90 font-medium">{f.label}</div>
                 {composition ? (
                   <div className="mt-2.5">
-                    <CompositionBar segments={composition} />
+                    <CompositionBar segments={composition} flags={f.label === 'Most riders, nation'} />
                   </div>
                 ) : (
                   <>

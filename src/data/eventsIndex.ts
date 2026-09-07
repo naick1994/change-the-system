@@ -482,11 +482,6 @@ export function fieldFacts(): FieldFact[] {
     { label: 'Most event wins, nation', value: '🇮🇹 Italy', detail: '2 of 6 championships (both Leonardo Casati)', to: '/athletes?q=IT' },
     { label: 'Most riders, brand', value: 'Harlem', detail: '8 riders across both divisions', to: '/athletes?q=Harlem' },
     { label: 'Most podiums, brand', value: 'Harlem', detail: '8 of 18 total podium spots, across 5 different riders', to: '/athletes?q=Harlem' },
-    {
-      label: 'Brand win rate',
-      value: 'Independent 50%',
-      detail: 'Heat wins ÷ heats played, pooled per brand: Independent 50% (8/16), Slingshot 47.6% (10/21), Harlem 46.3% (25/54, highest volume) … down to F-ONE 5% (1/20), Reedin 0% (0/13). Independent’s rate leans heavily on one rider (Jamie Overbeek) at that small sample size',
-    },
   ];
 }
 
