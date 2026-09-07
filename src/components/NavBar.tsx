@@ -4,8 +4,9 @@ import { Waves } from 'lucide-react';
 export function NavBar() {
   const { pathname } = useLocation();
   const isAthletes = pathname.startsWith('/athletes');
+  const isBrands = pathname.startsWith('/brands');
   const isHome = pathname === '/';
-  const isCompetitions = !isAthletes && !isHome;
+  const isCompetitions = !isAthletes && !isBrands && !isHome;
 
   return (
     <div className="relative border-b border-border">
@@ -25,6 +26,12 @@ export function NavBar() {
             className={`px-3 py-1.5 text-sm rounded-md transition-colors ${isAthletes ? 'bg-primary text-primary-foreground font-medium' : 'text-muted-foreground hover:text-foreground'}`}
           >
             Athletes
+          </Link>
+          <Link
+            to="/brands"
+            className={`px-3 py-1.5 text-sm rounded-md transition-colors ${isBrands ? 'bg-primary text-primary-foreground font-medium' : 'text-muted-foreground hover:text-foreground'}`}
+          >
+            Brands
           </Link>
         </nav>
       </div>

@@ -8,6 +8,7 @@ import CompetitionsIndex from "./pages/CompetitionsIndex";
 import EventPage from "./pages/EventPage";
 import AthletesIndex from "./pages/AthletesIndex";
 import AthleteGlobalPage from "./pages/AthleteGlobalPage";
+import BrandsIndex from "./pages/BrandsIndex";
 import NotFound from "./pages/NotFound";
 
 const App = () => (
@@ -20,6 +21,7 @@ const App = () => (
       <Route path="/competitions" element={<CompetitionsIndex />} />
       <Route path="/athletes" element={<AthletesIndex />} />
       <Route path="/athletes/:name" element={<AthleteGlobalPage />} />
+      <Route path="/brands" element={<BrandsIndex />} />
       <Route path="/:slug" element={<EventPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

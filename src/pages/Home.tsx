@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   siteTotals,
@@ -8,17 +9,21 @@ import {
   seasonTimeline,
   seasonFacts,
   fieldFacts,
-  fieldConcentrationFacts,
   nationComposition,
   brandComposition,
   mostRecentCompetition,
   type CompositionSegment,
 } from '@/data/eventsIndex';
+import { buildBrandRankings, type BrandRanking } from '@/data/brandRankings';
+import { buildGlobalAthletes, type GlobalAthlete } from '@/data/globalAthletes';
 import { Card } from '@/components/ui/card';
 import { Avatar } from '@/components/explorer/Avatar';
+import { BrandBadge } from '@/components/BrandBadge';
+import { Skeleton } from '@/components/ui/skeleton';
 import { flagEmoji } from '@/components/explorer/format';
+import ATHLETE_BRANDS from '@/data/athleteBrands.json';
 import { useCountUp } from '@/hooks/useCountUp';
-import { Waves, Users, Flame, Globe2, Trophy, Swords, Wind, Award, Zap, Sparkles, ShieldCheck, Repeat, Layers, Compass, Scale, type LucideIcon } from 'lucide-react';
+import { Users, Flame, Globe2, Trophy, Swords, Wind, Award, Zap, Sparkles, ShieldCheck, Repeat, Scale, type LucideIcon } from 'lucide-react';
 
 const STAT_ICONS = { competitions: Trophy, uniqueRiders: Users, heats: Flame, countries: Globe2 };
 const RESULT_ICON: Record<string, string> = { Champion: '🏆', 'Runner-up': '🥈', '2nd place': '🥈', '3rd place': '🥉' };
@@ -35,11 +40,6 @@ const INSIGHT_STYLE: Record<string, { icon: LucideIcon; color: string }> = {
   'Most consistent rider': { icon: ShieldCheck, color: 'text-teal-400 bg-teal-400/10' },
   'Longest win streak': { icon: Repeat, color: 'text-lime-400 bg-lime-400/10' },
   'Most balanced event': { icon: Scale, color: 'text-cyan-400 bg-cyan-400/10' },
-};
-
-const CONCENTRATION_STYLE: Record<string, { icon: LucideIcon; color: string }> = {
-  'Heat-winners parity': { icon: Layers, color: 'text-sky-400 bg-sky-400/10' },
-  "Nations in every men's event": { icon: Compass, color: 'text-amber-400 bg-amber-400/10' },
 };
 
 const COMPOSITION_FOR_LABEL: Record<string, () => CompositionSegment[]> = {
@@ -109,10 +109,23 @@ export default function Home() {
   const timeline = seasonTimeline();
   const countries = siteCountries();
   const recap = mostRecentCompetition();
+  const [brandsOverall, setBrandsOverall] = useState<BrandRanking[] | null>(null);
+  const [brandsMen, setBrandsMen] = useState<BrandRanking[] | null>(null);
+  const [brandsWomen, setBrandsWomen] = useState<BrandRanking[] | null>(null);
+  const [riders, setRiders] = useState<GlobalAthlete[] | null>(null);
+  useEffect(() => {
+    buildBrandRankings('Overall').then(setBrandsOverall);
+    buildBrandRankings('Men').then(setBrandsMen);
+    buildBrandRankings('Women').then(setBrandsWomen);
+    buildGlobalAthletes().then(setRiders);
+  }, []);
+  // Sorted by points specifically for this teaser, since it displays each rider's points value — the
+  // /athletes page itself stays sorted by actual bracket results (its own deliberate ranking philosophy).
+  const ridersMenByPoints = riders ? riders.filter((a) => a.events[0]?.division === 'Men').sort((a, b) => b.points - a.points) : null;
+  const ridersWomenByPoints = riders ? riders.filter((a) => a.events[0]?.division === 'Women').sort((a, b) => b.points - a.points) : null;
   const facts = seasonFacts();
   const field = fieldFacts();
   const insights = [...facts, ...field];
-  const concentration = fieldConcentrationFacts();
 
   const stats: { key: keyof typeof STAT_ICONS; value: number; label: string }[] = [
     { key: 'competitions', value: totals.competitions, label: 'Competitions' },
@@ -124,9 +137,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 max-w-4xl py-16">
-        <div className="rise-in text-xs font-mono tracking-widest uppercase text-muted-foreground mb-3 flex items-center gap-2">
-          <Waves className="w-3.5 h-3.5" /> Home
-        </div>
         <h1 className="rise-in font-display text-4xl md:text-5xl font-bold mb-4 leading-tight" style={{ animationDelay: '60ms' }}>
           Where kitesurf data <span className="text-primary">tells the story.</span>
         </h1>
@@ -151,7 +161,7 @@ export default function Home() {
         </div>
 
         <div className="rise-in mb-10 p-5 rounded-lg border border-dashed border-border bg-card/30" style={{ animationDelay: '440ms' }}>
-          <div className="text-[10px] font-mono tracking-widest uppercase text-muted-foreground mb-4">Editorial · Three stops, one season</div>
+          <div className="text-[10px] font-mono tracking-widest uppercase text-muted-foreground mb-4">Three stops, one season</div>
           <div className="relative flex items-start justify-between">
             <div className="absolute top-[7px] left-0 right-0 h-px bg-border" />
             {timeline.map((stop) => (
@@ -171,6 +181,116 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        <div className="h-px mb-10 bg-gradient-to-r from-transparent via-border to-transparent" />
+
+        <div className="rise-in mb-4 text-xs font-semibold uppercase tracking-wide text-muted-foreground" style={{ animationDelay: '460ms' }}>
+          Top riders
+        </div>
+        <Card className="rise-in p-5 mb-10" style={{ animationDelay: '470ms' }}>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {([['Men', ridersMenByPoints], ['Women', ridersWomenByPoints]] as const).map(([label, list]) => (
+              <div key={label}>
+                <div className="text-xs uppercase tracking-wide text-muted-foreground mb-2">{label}</div>
+                {!list ? (
+                  <div className="space-y-2">
+                    <Skeleton className="h-10 w-full" />
+                    <Skeleton className="h-10 w-full" />
+                    <Skeleton className="h-10 w-full" />
+                  </div>
+                ) : (
+                  <div className="space-y-1">
+                    {list.slice(0, 3).map((a, i) => (
+                      <Link
+                        key={a.name}
+                        to={`/athletes/${encodeURIComponent(a.name)}`}
+                        className="flex items-center gap-3 py-1.5 -mx-1 px-1 rounded hover:bg-card/40 transition-colors"
+                      >
+                        <span className="w-4 text-center text-xs font-bold tabular-nums text-muted-foreground shrink-0">{i + 1}</span>
+                        <Avatar name={a.name} nationality={a.nationality} size={28} />
+                        <div className="min-w-0 flex-1">
+                          <div className="text-sm font-medium truncate">{a.name}</div>
+                        </div>
+                        <div className="text-right shrink-0">
+                          <div className="text-sm font-display font-bold tabular-nums">{a.points.toLocaleString('en-US')}</div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <Link to="/athletes" className="inline-flex items-center gap-1 text-sm text-primary hover:underline mt-4">
+            See the full rider ranking →
+          </Link>
+        </Card>
+
+        <div className="rise-in mb-4 text-xs font-semibold uppercase tracking-wide text-muted-foreground" style={{ animationDelay: '480ms' }}>
+          Kite Brands Championship
+        </div>
+        <Card className="rise-in p-5 mb-10" style={{ animationDelay: '490ms' }}>
+          <div className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Overall</div>
+          {!brandsOverall ? (
+            <div className="space-y-2">
+              <Skeleton className="h-10 w-full" />
+              <Skeleton className="h-10 w-full" />
+              <Skeleton className="h-10 w-full" />
+            </div>
+          ) : (
+            <div className="space-y-1">
+              {brandsOverall.slice(0, 3).map((b, i) => (
+                <div key={b.brand} className="flex items-center gap-3 py-1.5">
+                  <span className="w-5 text-center text-sm font-bold tabular-nums text-muted-foreground shrink-0">{i + 1}</span>
+                  <BrandBadge brand={b.brand} size={32} />
+                  <div className="min-w-0 flex-1">
+                    <div className="font-medium truncate">{b.brand}</div>
+                    <div className="text-xs text-muted-foreground">{b.riderCount} {b.riderCount === 1 ? 'rider' : 'riders'}</div>
+                  </div>
+                  <div className="text-right shrink-0">
+                    <div className="font-display font-bold tabular-nums">{b.points.toLocaleString('en-US')}</div>
+                    <div className="text-[11px] text-muted-foreground">points</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div className="h-px my-5 bg-border" />
+
+          <div className="grid sm:grid-cols-2 gap-6">
+            {([['Men', brandsMen], ['Women', brandsWomen]] as const).map(([label, list]) => (
+              <div key={label}>
+                <div className="text-xs uppercase tracking-wide text-muted-foreground mb-2">{label}</div>
+                {!list ? (
+                  <div className="space-y-2">
+                    <Skeleton className="h-10 w-full" />
+                    <Skeleton className="h-10 w-full" />
+                    <Skeleton className="h-10 w-full" />
+                  </div>
+                ) : (
+                  <div className="space-y-1">
+                    {list.slice(0, 3).map((b, i) => (
+                      <div key={b.brand} className="flex items-center gap-3 py-1.5">
+                        <span className="w-4 text-center text-xs font-bold tabular-nums text-muted-foreground shrink-0">{i + 1}</span>
+                        <BrandBadge brand={b.brand} size={28} />
+                        <div className="min-w-0 flex-1">
+                          <div className="text-sm font-medium truncate">{b.brand}</div>
+                        </div>
+                        <div className="text-right shrink-0">
+                          <div className="text-sm font-display font-bold tabular-nums">{b.points.toLocaleString('en-US')}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <Link to="/brands" className="inline-flex items-center gap-1 text-sm text-primary hover:underline mt-4">
+            See the full Kite Brands Championship →
+          </Link>
+        </Card>
 
         <div className="h-px mb-10 bg-gradient-to-r from-transparent via-border to-transparent" />
 
@@ -245,7 +365,7 @@ export default function Home() {
               <Trophy className="w-3.5 h-3.5" /> Women's storyline
             </div>
             <div className="text-sm text-muted-foreground mb-3">
-              The only three women to enter every event — each closed the season with exactly {spotlightWomen.totalWins} heat wins, reached by different routes.
+              The only three women to enter every event, each closed the season with exactly {spotlightWomen.totalWins} heat wins, reached by different routes.
             </div>
             <div className="space-y-2.5">
               {spotlightWomen.athletes.map((a) => (
@@ -276,10 +396,10 @@ export default function Home() {
           Latest competition
         </div>
         <Card className="rise-in p-5 mb-10" style={{ animationDelay: '640ms' }}>
-          <div className="mb-4">
-            <div className="font-display text-xl font-bold">{recap.competition}</div>
+          <Link to={`/${recap.divisions[0].slug}`} className="block mb-4 group w-fit">
+            <div className="font-display text-xl font-bold group-hover:text-primary transition-colors">{recap.competition}</div>
             <div className="text-sm text-muted-foreground">{recap.location} · {recap.date}</div>
-          </div>
+          </Link>
           <div className="grid sm:grid-cols-2 gap-5">
             {recap.divisions.map((d) => (
               <div key={d.slug}>
@@ -302,11 +422,12 @@ export default function Home() {
           </div>
         </Card>
 
+
         <div className="rise-in mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground" style={{ animationDelay: '740ms' }}>
           By the numbers
         </div>
         <p className="rise-in text-sm text-muted-foreground mb-4 max-w-lg" style={{ animationDelay: '760ms' }}>
-          The records, the ties, and the quirks that defined the season — from the tightest margin of the year to which sponsor actually wins the most heats.
+          The records, the ties, and the quirks that defined the season, from the tightest margin of the year to which sponsor actually wins the most heats.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {insights.map((f, i) => {
@@ -346,35 +467,6 @@ export default function Home() {
             ) : (
               <div key={f.label} className="rise-in" style={{ animationDelay: `${800 + i * 70}ms` }}>
                 {content}
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="h-px mt-10 mb-10 bg-gradient-to-r from-transparent via-border to-transparent" />
-
-        <div className="rise-in mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground" style={{ animationDelay: '1100ms' }}>
-          Field concentration
-        </div>
-        <p className="rise-in text-sm text-muted-foreground mb-4 max-w-lg" style={{ animationDelay: '1120ms' }}>
-          How wide open — or how concentrated — each event really was, once you look past the podium.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {concentration.map((f, i) => {
-            const style = CONCENTRATION_STYLE[f.label] ?? { icon: Layers, color: 'text-primary bg-primary/10' };
-            const Icon = style.icon;
-            return (
-              <div key={f.label} className="rise-in" style={{ animationDelay: `${1160 + i * 70}ms` }}>
-                <Card className="p-4 h-full">
-                  <div className={`w-9 h-9 rounded-full flex items-center justify-center mb-3 ${style.color}`}>
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <div className="font-display text-xl font-bold leading-tight tabular-nums">
-                    <AnimatedValue value={f.value} />
-                  </div>
-                  <div className="text-sm text-foreground/90 mt-1">{f.label}</div>
-                  <div className="text-xs text-muted-foreground mt-1 leading-snug">{f.detail}</div>
-                </Card>
               </div>
             );
           })}

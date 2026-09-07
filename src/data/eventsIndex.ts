@@ -19,7 +19,7 @@ import type { EventMeta } from '@/types/bigAirEvent';
 export const EVENTS: EventMeta[] = [
   {
     slug: 'lords-of-tram-france-2026-men',
-    name: 'Lords of Tram (GKA France) 2026 — Men',
+    name: 'Lords of Tram (GKA France) 2026 · Men',
     competition: 'Lords of Tram (GKA France) 2026',
     division: 'Men',
     location: 'Le Barcarès, France',
@@ -41,7 +41,7 @@ export const EVENTS: EventMeta[] = [
   },
   {
     slug: 'lords-of-tram-france-2026-women',
-    name: 'Lords of Tram (GKA France) 2026 — Women',
+    name: 'Lords of Tram (GKA France) 2026 · Women',
     competition: 'Lords of Tram (GKA France) 2026',
     division: 'Women',
     location: 'Le Barcarès, France',
@@ -63,13 +63,13 @@ export const EVENTS: EventMeta[] = [
   },
   {
     slug: 'gka-big-air-mykonos-2026-men',
-    name: 'GKA Big Air Mykonos 2026 — Men',
+    name: 'GKA Big Air Mykonos 2026 · Men',
     competition: 'GKA Big Air Mykonos 2026',
     division: 'Men',
     location: 'Mykonos, Greece',
     date: '18–19 Jun 2026',
     isoDate: '2026-06-19',
-    source: 'gkakiteworldtour.com (GKA ladder — score only)',
+    source: 'gkakiteworldtour.com (GKA ladder, score only)',
     loadData: () => import('./events/gka-big-air-mykonos-2026-men.json').then((m) => m.default as any),
     winner: 'Leonardo Casati',
     winnerNationality: 'IT',
@@ -85,13 +85,13 @@ export const EVENTS: EventMeta[] = [
   },
   {
     slug: 'gka-big-air-mykonos-2026-women',
-    name: 'GKA Big Air Mykonos 2026 — Women',
+    name: 'GKA Big Air Mykonos 2026 · Women',
     competition: 'GKA Big Air Mykonos 2026',
     division: 'Women',
     location: 'Mykonos, Greece',
     date: '18–19 Jun 2026',
     isoDate: '2026-06-19',
-    source: 'gkakiteworldtour.com (GKA ladder — score only)',
+    source: 'gkakiteworldtour.com (GKA ladder, score only)',
     loadData: () => import('./events/gka-big-air-mykonos-2026-women.json').then((m) => m.default as any),
     winner: 'Mikaili Sol',
     winnerNationality: 'BR',
@@ -107,7 +107,7 @@ export const EVENTS: EventMeta[] = [
   },
   {
     slug: 'cold-hawaii-big-air-2026-men',
-    name: 'Cold Hawaii Big Air 2026 — Men',
+    name: 'Cold Hawaii Big Air 2026 · Men',
     competition: 'Cold Hawaii Big Air 2026',
     division: 'Men',
     location: 'Klitmøller, Denmark',
@@ -128,7 +128,7 @@ export const EVENTS: EventMeta[] = [
   },
   {
     slug: 'cold-hawaii-big-air-2026-women',
-    name: 'Cold Hawaii Big Air 2026 — Women',
+    name: 'Cold Hawaii Big Air 2026 · Women',
     competition: 'Cold Hawaii Big Air 2026',
     division: 'Women',
     location: 'Klitmøller, Denmark',
@@ -389,39 +389,6 @@ export function tourSpotlightWomen(): TiedSeasonStoryline {
   };
 }
 
-export interface ConcentrationFact {
-  label: string;
-  value: string;
-  detail: string;
-}
-
-/**
- * Two facts about how concentrated (vs. wide-open) each event's results
- * were — a different flavor from the record-style tiles above, about tour
- * depth rather than any single standout performance.
- * - Heat-winners parity: in every one of the three men's events, exactly
- *   12 riders ever won a heat — verified by counting distinct
- *   `placement === 1` names per event's heats and comparing against that
- *   event's own roster size (24, 24, 18).
- * - Nations in every men's event: the 8 countries with at least one rider
- *   in all three men's competitions, via set intersection of each event's
- *   distinct `nationality` values.
- */
-export function fieldConcentrationFacts(): ConcentrationFact[] {
-  return [
-    {
-      label: 'Heat-winners parity',
-      value: '12 riders',
-      detail: "Exactly 12 riders won at least one heat in every men's event — Lords of Tram (12 of 24), GKA Mykonos (12 of 24), Cold Hawaii (12 of 18)",
-    },
-    {
-      label: "Nations in every men's event",
-      value: '8 countries',
-      detail: 'Denmark, Spain, Israel, Italy, Netherlands, New Zealand, USA, South Africa — the only nations to enter a rider in all three',
-    },
-  ];
-}
-
 export interface FieldFact {
   label: string;
   value: string;
@@ -533,7 +500,7 @@ export function seasonFacts(): SeasonFact[] {
     {
       label: 'Most consistent rider',
       value: 'Jamie Overbeek',
-      detail: '3 crashes in 56 attempts (5.4%) — the lowest crash rate of the season, across Lords of Tram and Cold Hawaii',
+      detail: '3 crashes in 56 attempts (5.4%), the lowest crash rate of the season, across Lords of Tram and Cold Hawaii',
     },
     {
       label: 'Longest win streak',
@@ -543,7 +510,7 @@ export function seasonFacts(): SeasonFact[] {
     {
       label: 'Most balanced event',
       value: 'Lords of Tram Women',
-      detail: 'Population std. dev. of 3.19 across every recorded score — the tightest field of the season. GKA Mykonos Men was close behind at 3.20',
+      detail: 'Population std. dev. of 3.19 across every recorded score, the tightest field of the season. GKA Mykonos Men was close behind at 3.20',
       slug: 'lords-of-tram-france-2026-women',
     },
   ];

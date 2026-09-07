@@ -143,6 +143,41 @@ export function raceStandings(names: string[], profiles: Record<string, AthleteP
   return out;
 }
 
+/**
+ * GKA's real points-by-finish scale, taken from the official 2026 GKA Big
+ * Air ranking PDF (the same source already used for the sibling
+ * scoring-system-gka project's season standings). Cross-checked against
+ * two independent events (Lords of Tram France, GKA Mykonos Greece) — both
+ * award the exact same points at the exact same rank tiers, confirming
+ * this is a fixed scale rather than a one-event coincidence. The rank
+ * numbers use "skip after ties" (1224-style) — e.g. a 4-way tie at rank 9
+ * means the next distinct rank is 13 — which is exactly the same skip
+ * pattern raceStandings() above already produces, so RaceStanding.rank
+ * plugs directly into this table with no re-mapping needed.
+ */
+export const GKA_POINTS_TIERS: [rank: number, points: number][] = [
+  [1, 1000],
+  [2, 870],
+  [3, 770],
+  [4, 700],
+  [5, 580],
+  [7, 500],
+  [9, 420],
+  [13, 280],
+  [17, 140],
+  [21, 90],
+];
+
+/** GKA points for a given RaceStandings rank — the highest tier whose threshold the rank meets. Ranks deeper than the lowest tier (small brackets that never reach round-of-21) score 0. */
+export function gkaPointsForRank(rank: number): number {
+  let points = 0;
+  for (const [tierRank, tierPoints] of GKA_POINTS_TIERS) {
+    if (rank >= tierRank) points = tierPoints;
+    else break;
+  }
+  return points;
+}
+
 /** The single biggest scored move in this event — rich schema only (reduced-schema sources never publish per-move data), null otherwise. */
 export function eventBiggestTrick(profiles: Record<string, AthleteProfile>, rich: boolean): { name: string; nationality: string; value: number } | null {
   if (!rich) return null;

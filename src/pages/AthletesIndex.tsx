@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { buildGlobalAthletes, type GlobalAthlete } from '@/data/globalAthletes';
 import { Avatar } from '@/components/explorer/Avatar';
+import { YearSelector } from '@/components/YearSelector';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Waves, Search } from 'lucide-react';
 import ATHLETE_BRANDS from '@/data/athleteBrands.json';
@@ -12,12 +13,14 @@ const COMP_SHORT: Record<string, string> = {
   'Lords of Tram (GKA France) 2026': 'Lords of Tram',
   'GKA Big Air Mykonos 2026': 'GKA Mykonos',
 };
-type Division = 'Men' | 'Women';
+type Division = 'Overall' | 'Men' | 'Women';
+const DIVISIONS: Division[] = ['Overall', 'Men', 'Women'];
 
 export default function AthletesIndex() {
   const [searchParams] = useSearchParams();
   const [athletes, setAthletes] = useState<GlobalAthlete[] | null>(null);
-  const [division, setDivision] = useState<Division>('Men');
+  const initialDivision = DIVISIONS.find((d) => d === searchParams.get('division')) ?? 'Men';
+  const [division, setDivision] = useState<Division>(initialDivision);
   const [query, setQuery] = useState(searchParams.get('q') ?? '');
 
   useEffect(() => {
@@ -27,7 +30,7 @@ export default function AthletesIndex() {
   const q = query.trim().toLowerCase();
   const list =
     athletes
-      ?.filter((a) => a.events[0]?.division === division)
+      ?.filter((a) => division === 'Overall' || a.events[0]?.division === division)
       .filter((a) => {
         if (!q) return true;
         const brand = ATHLETE_BRANDS[a.name as keyof typeof ATHLETE_BRANDS] ?? '';
@@ -37,8 +40,11 @@ export default function AthletesIndex() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 max-w-4xl py-16">
-        <div className="text-xs font-mono tracking-widest uppercase text-muted-foreground mb-3 flex items-center gap-2">
-          <Waves className="w-3.5 h-3.5" /> Athletes
+        <div className="flex items-center justify-between gap-3 mb-3">
+          <div className="text-xs font-mono tracking-widest uppercase text-muted-foreground flex items-center gap-2">
+            <Waves className="w-3.5 h-3.5" /> Athletes
+          </div>
+          <YearSelector />
         </div>
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 leading-tight">
           Every rider, <span className="text-primary">across every event.</span>
@@ -51,7 +57,7 @@ export default function AthletesIndex() {
 
         <div className="flex flex-wrap items-center gap-3 mb-6">
           <div className="inline-flex rounded-lg border border-border p-0.5">
-            {(['Men', 'Women'] as Division[]).map((d) => (
+            {DIVISIONS.map((d) => (
               <button
                 key={d}
                 type="button"
@@ -111,6 +117,10 @@ export default function AthletesIndex() {
                       </span>
                     ))}
                   </div>
+                </div>
+                <div className="text-right shrink-0">
+                  <div className="font-display font-bold tabular-nums">{a.points.toLocaleString('en-US')}</div>
+                  <div className="text-[11px] text-muted-foreground">points</div>
                 </div>
               </Link>
             ))}

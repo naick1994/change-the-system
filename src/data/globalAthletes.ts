@@ -1,5 +1,5 @@
 import { EVENTS } from './eventsIndex';
-import { raceStandings } from '@/components/explorer/format';
+import { raceStandings, gkaPointsForRank } from '@/components/explorer/format';
 
 export interface AthleteEventResult {
   slug: string;
@@ -8,6 +8,7 @@ export interface AthleteEventResult {
   date: string;
   rank: number;
   resultLabel: string;
+  points: number;
 }
 
 export interface GlobalAthlete {
@@ -17,6 +18,8 @@ export interface GlobalAthlete {
   podiums: number;
   /** Mean of this athlete's RaceStandings rank across events entered — each event counts equally regardless of field size, per how this ranking is meant to work. */
   avgRank: number;
+  /** Total GKA points across every event entered (see gkaPointsForRank) — the season-total metric brand rankings are built from. */
+  points: number;
   events: AthleteEventResult[];
 }
 
@@ -44,9 +47,10 @@ export async function buildGlobalAthletes(): Promise<GlobalAthlete[]> {
       const profile = data.profiles[s.name];
       let athlete = byName.get(s.name);
       if (!athlete) {
-        athlete = { name: s.name, nationality: profile.nationality, wins: 0, podiums: 0, avgRank: 0, events: [] };
+        athlete = { name: s.name, nationality: profile.nationality, wins: 0, podiums: 0, avgRank: 0, points: 0, events: [] };
         byName.set(s.name, athlete);
       }
+      const points = gkaPointsForRank(s.rank);
       athlete.events.push({
         slug: meta.slug,
         competition: meta.competition,
@@ -54,9 +58,11 @@ export async function buildGlobalAthletes(): Promise<GlobalAthlete[]> {
         date: meta.date,
         rank: s.rank,
         resultLabel: s.resultLabel,
+        points,
       });
       if (s.rank === 1) athlete.wins += 1;
       if (s.rank <= 3) athlete.podiums += 1;
+      athlete.points += points;
     }
   }
 

@@ -50,6 +50,10 @@ export default function AthleteGlobalPage() {
                 <div className="text-sm text-muted-foreground mt-0.5">
                   {athlete.wins} win{athlete.wins !== 1 ? 's' : ''} · {athlete.podiums} podium{athlete.podiums !== 1 ? 's' : ''} · {athlete.events.length} event{athlete.events.length !== 1 ? 's' : ''} entered
                 </div>
+                <div className="text-sm mt-1">
+                  <span className="font-display font-bold tabular-nums">{athlete.points.toLocaleString('en-US')}</span>
+                  <span className="text-muted-foreground"> points</span>
+                </div>
               </div>
             </div>
 
@@ -67,8 +71,11 @@ export default function AthleteGlobalPage() {
                       <div className="font-medium">{e.competition}</div>
                       <div className="text-xs text-muted-foreground mt-0.5">{e.division} · {e.date}</div>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <span className={`text-sm font-medium ${e.rank <= 3 ? 'text-primary' : 'text-muted-foreground'}`}>{e.resultLabel}</span>
+                    <div className="flex items-center gap-3">
+                      <div className="text-right">
+                        <div className={`text-sm font-medium ${e.rank <= 3 ? 'text-primary' : 'text-muted-foreground'}`}>{e.resultLabel}</div>
+                        <div className="text-xs text-muted-foreground">{e.points} pts</div>
+                      </div>
                       <ArrowUpRight className="w-4 h-4 text-muted-foreground" />
                     </div>
                   </Card>
