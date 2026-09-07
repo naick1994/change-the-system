@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/card';
 import { Avatar } from '@/components/explorer/Avatar';
 import { YearSelector } from '@/components/YearSelector';
 import { flagEmoji } from '@/components/explorer/format';
-import { ArrowUpRight, MapPin, Trophy } from 'lucide-react';
+import { ArrowUpRight, MapPin } from 'lucide-react';
 
 const MEDAL: Record<number, string> = { 1: '🥇', 2: '🥈', 3: '🥉' };
 
@@ -14,10 +14,7 @@ export default function CompetitionsIndex() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 max-w-4xl py-16">
-        <div className="flex items-center justify-between gap-3 mb-3">
-          <div className="text-xs font-mono tracking-widest uppercase text-muted-foreground flex items-center gap-2">
-            <Trophy className="w-3.5 h-3.5" /> Competitions
-          </div>
+        <div className="flex justify-end mb-3">
           <YearSelector />
         </div>
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 leading-tight">

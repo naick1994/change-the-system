@@ -6,7 +6,7 @@ import { BrandBadge } from '@/components/BrandBadge';
 import { YearSelector } from '@/components/YearSelector';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from '@/components/ui/table';
-import { Waves, Search } from 'lucide-react';
+import { Search } from 'lucide-react';
 import ATHLETE_BRANDS from '@/data/athleteBrands.json';
 
 type Division = 'Men' | 'Women';
@@ -37,10 +37,7 @@ export default function AthletesIndex() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 max-w-4xl py-16">
-        <div className="flex items-center justify-between gap-3 mb-3">
-          <div className="text-xs font-mono tracking-widest uppercase text-muted-foreground flex items-center gap-2">
-            <Waves className="w-3.5 h-3.5" /> Athletes
-          </div>
+        <div className="flex justify-end mb-3">
           <YearSelector />
         </div>
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 leading-tight">

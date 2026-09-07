@@ -11,6 +11,7 @@ import {
   fieldFacts,
   nationComposition,
   brandComposition,
+  brandPodiumComposition,
   mostRecentCompetition,
   type CompositionSegment,
 } from '@/data/eventsIndex';
@@ -45,15 +46,16 @@ const INSIGHT_STYLE: Record<string, { icon: LucideIcon; color: string }> = {
 const COMPOSITION_FOR_LABEL: Record<string, () => CompositionSegment[]> = {
   'Most riders, nation': nationComposition,
   'Most riders, brand': brandComposition,
+  'Most podiums, brand': brandPodiumComposition,
 };
 
 const COMPOSITION_PALETTE = ['#f2661a', '#3987e5', '#2ea36b', '#c9578f', '#c9a227', '#5b6472'];
 
-function CompositionBar({ segments, flags }: { segments: CompositionSegment[]; flags?: boolean }) {
+function CompositionBar({ segments, flags, unit = 'riders total' }: { segments: CompositionSegment[]; flags?: boolean; unit?: string }) {
   const total = segments.reduce((sum, s) => sum + s.count, 0);
   return (
     <div>
-      <div className="text-xs text-muted-foreground mb-2">{total} riders total</div>
+      <div className="text-xs text-muted-foreground mb-2">{total} {unit}</div>
       <div className="flex h-2 rounded-full overflow-hidden bg-muted">
         {segments.map((s, i) => (
           <div
@@ -442,7 +444,11 @@ export default function Home() {
                 <div className="text-sm text-foreground/90 font-medium">{f.label}</div>
                 {composition ? (
                   <div className="mt-2.5">
-                    <CompositionBar segments={composition} flags={f.label === 'Most riders, nation'} />
+                    <CompositionBar
+                      segments={composition}
+                      flags={f.label === 'Most riders, nation'}
+                      unit={f.label === 'Most podiums, brand' ? 'podium spots' : 'riders total'}
+                    />
                   </div>
                 ) : (
                   <>

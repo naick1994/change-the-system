@@ -443,6 +443,22 @@ export function brandComposition(): CompositionSegment[] {
   ];
 }
 
+/**
+ * Which brand's riders actually stood on the podium, out of all 18 podium
+ * spots across the 6 divisions (top 3 = podium in every event's bracket,
+ * matching RaceStandings' own rank <= 3). Top 3 + "Other" — the 4th spot
+ * is a 3-way tie at 1 podium each (Independent, Naish, Core), not worth an
+ * arbitrary tie-break.
+ */
+export function brandPodiumComposition(): CompositionSegment[] {
+  return [
+    { label: 'Harlem', count: 8 },
+    { label: 'Duotone', count: 4 },
+    { label: 'North', count: 3 },
+    { label: 'Other', count: 3 },
+  ];
+}
+
 export function fieldFacts(): FieldFact[] {
   return [
     { label: 'Most riders, nation', value: '🇳🇱 NL / 🇫🇷 FR', detail: '8 riders each, out of 48 total' },

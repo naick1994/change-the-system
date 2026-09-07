@@ -5,7 +5,7 @@ import { GKA_POINTS_TIERS } from '@/components/explorer/format';
 import { BrandBadge } from '@/components/BrandBadge';
 import { YearSelector } from '@/components/YearSelector';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Waves, Info } from 'lucide-react';
+import { Info } from 'lucide-react';
 
 function ordinalLabel(n: number): string {
   const v = n % 100;
@@ -65,10 +65,7 @@ export default function BrandsIndex() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="container mx-auto px-4 max-w-4xl py-16">
-        <div className="flex items-center justify-between gap-3 mb-3">
-          <div className="text-xs font-mono tracking-widest uppercase text-muted-foreground flex items-center gap-2">
-            <Waves className="w-3.5 h-3.5" /> Brands
-          </div>
+        <div className="flex justify-end mb-3">
           <YearSelector />
         </div>
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 leading-tight">
