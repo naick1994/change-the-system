@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import type { BigAirEventData } from '@/types/bigAirEvent';
-import { Card } from '@/components/ui/card';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { Leaderboard } from './Leaderboard';
@@ -72,94 +71,86 @@ export function Explorer({ data, initialAthlete }: { data: BigAirEventData; init
 
   return (
     <div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-border border border-border rounded-lg overflow-hidden mb-6">
-        {kpis.map((k) => (
-          <div key={k.l} className="bg-card px-4 py-3">
-            <div className="font-display text-xl font-bold tabular-nums">{k.v}</div>
-            <div className="text-xs text-muted-foreground mt-1 leading-snug">{k.l}</div>
+      <div className="flex flex-wrap border-t border-b border-border mb-8">
+        {kpis.map((k, i, arr) => (
+          <div key={k.l} className={`flex-1 min-w-[8rem] py-4 pr-4 ${i < arr.length - 1 ? 'border-r border-border' : ''}`}>
+            <div className="font-display text-2xl md:text-3xl font-bold tabular-nums leading-none">{k.v}</div>
+            <div className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground mt-2 leading-snug">{k.l}</div>
           </div>
         ))}
       </div>
 
       {showHighlights && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 border-t border-l border-border mb-8">
           {highestScore && (
             <button
               type="button"
               onClick={() => selectAthlete(highestScore.name)}
-              className="text-left"
+              className="text-left p-4 border-r border-b border-border hover:bg-card/30 transition-colors"
             >
-              <Card className="p-4 h-full hover:border-primary/50 transition-colors">
-                <div className="flex items-center gap-1.5 text-xs text-primary font-medium mb-2 uppercase tracking-wide">
-                  <TrendingUp className="w-3.5 h-3.5" /> Highest score
+              <div className="flex items-center gap-1.5 text-xs text-primary font-mono font-medium mb-2.5 uppercase tracking-widest">
+                <TrendingUp className="w-3.5 h-3.5" /> Highest score
+              </div>
+              <div className="flex items-center gap-3">
+                <Avatar name={highestScore.name} nationality={highestScore.nationality} size={32} />
+                <div>
+                  <div className="font-display text-lg font-bold leading-none">{fmt(highestScore.value, 2)}</div>
+                  <div className="text-xs text-muted-foreground mt-0.5">{highestScore.name}</div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Avatar name={highestScore.name} nationality={highestScore.nationality} size={32} />
-                  <div>
-                    <div className="font-display text-lg font-bold leading-none">{fmt(highestScore.value, 2)}</div>
-                    <div className="text-xs text-muted-foreground mt-0.5">{highestScore.name}</div>
-                  </div>
-                </div>
-              </Card>
+              </div>
             </button>
           )}
           {biggestTrick && (
             <button
               type="button"
               onClick={() => selectAthlete(biggestTrick.name)}
-              className="text-left"
+              className="text-left p-4 border-r border-b border-border hover:bg-card/30 transition-colors"
             >
-              <Card className="p-4 h-full hover:border-primary/50 transition-colors">
-                <div className="flex items-center gap-1.5 text-xs text-primary font-medium mb-2 uppercase tracking-wide">
-                  <Zap className="w-3.5 h-3.5" /> Biggest trick
+              <div className="flex items-center gap-1.5 text-xs text-primary font-mono font-medium mb-2.5 uppercase tracking-widest">
+                <Zap className="w-3.5 h-3.5" /> Biggest trick
+              </div>
+              <div className="flex items-center gap-3">
+                <Avatar name={biggestTrick.name} nationality={biggestTrick.nationality} size={32} />
+                <div>
+                  <div className="font-display text-lg font-bold leading-none">{fmt(biggestTrick.value, 2)}</div>
+                  <div className="text-xs text-muted-foreground mt-0.5">{biggestTrick.name}</div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Avatar name={biggestTrick.name} nationality={biggestTrick.nationality} size={32} />
-                  <div>
-                    <div className="font-display text-lg font-bold leading-none">{fmt(biggestTrick.value, 2)}</div>
-                    <div className="text-xs text-muted-foreground mt-0.5">{biggestTrick.name}</div>
-                  </div>
-                </div>
-              </Card>
+              </div>
             </button>
           )}
           {closestHeat && (
             <button
               type="button"
               onClick={() => setHeatDetail(closestHeat.heatNo)}
-              className="text-left"
+              className="text-left p-4 border-r border-b border-border hover:bg-card/30 transition-colors"
             >
-              <Card className="p-4 h-full hover:border-primary/50 transition-colors">
-                <div className="flex items-center gap-1.5 text-xs text-primary font-medium mb-2 uppercase tracking-wide">
-                  <Swords className="w-3.5 h-3.5" /> Closest heat
-                </div>
-                <div className="font-display text-lg font-bold leading-none">Won by {fmt(closestHeat.gap, 2)}</div>
-                <div className="text-xs text-muted-foreground mt-1">
-                  {closestHeat.winner} over {closestHeat.runnerUp} · {roundShort(closestHeat.round)} · Heat {closestHeat.heatNo}
-                </div>
-              </Card>
+              <div className="flex items-center gap-1.5 text-xs text-primary font-mono font-medium mb-2.5 uppercase tracking-widest">
+                <Swords className="w-3.5 h-3.5" /> Closest heat
+              </div>
+              <div className="font-display text-lg font-bold leading-none">Won by {fmt(closestHeat.gap, 2)}</div>
+              <div className="text-xs text-muted-foreground mt-1">
+                {closestHeat.winner} over {closestHeat.runnerUp} · {roundShort(closestHeat.round)} · Heat {closestHeat.heatNo}
+              </div>
             </button>
           )}
           {compactHeat && (
             <button
               type="button"
               onClick={() => setHeatDetail(compactHeat.heatNo)}
-              className="text-left"
+              className="text-left p-4 border-r border-b border-border hover:bg-card/30 transition-colors"
             >
-              <Card className="p-4 h-full hover:border-primary/50 transition-colors">
-                <div className="flex items-center gap-1.5 text-xs text-primary font-medium mb-2 uppercase tracking-wide">
-                  <Users2 className="w-3.5 h-3.5" /> Most compact heat
-                </div>
-                <div className="font-display text-lg font-bold leading-none">{fmt(compactHeat.spread, 2)} spread</div>
-                <div className="text-xs text-muted-foreground mt-1">
-                  1st to last of {compactHeat.count} · {roundShort(compactHeat.round)} · Heat {compactHeat.heatNo}
-                </div>
-              </Card>
+              <div className="flex items-center gap-1.5 text-xs text-primary font-mono font-medium mb-2.5 uppercase tracking-widest">
+                <Users2 className="w-3.5 h-3.5" /> Most compact heat
+              </div>
+              <div className="font-display text-lg font-bold leading-none">{fmt(compactHeat.spread, 2)} spread</div>
+              <div className="text-xs text-muted-foreground mt-1">
+                1st to last of {compactHeat.count} · {roundShort(compactHeat.round)} · Heat {compactHeat.heatNo}
+              </div>
             </button>
           )}
           {brandLeaders && (
-            <Card className="p-4 h-full">
-              <div className="flex items-center gap-1.5 text-xs text-primary font-medium mb-2 uppercase tracking-wide">
+            <div className="p-4 border-r border-b border-border">
+              <div className="flex items-center gap-1.5 text-xs text-primary font-mono font-medium mb-2.5 uppercase tracking-widest">
                 <Shirt className="w-3.5 h-3.5" /> Brands in this field
               </div>
               <div className="text-sm">
@@ -172,11 +163,11 @@ export function Explorer({ data, initialAthlete }: { data: BigAirEventData; init
                   <span className="text-muted-foreground"> · most heat wins ({brandLeaders.mostWins.count})</span>
                 </div>
               )}
-            </Card>
+            </div>
           )}
           {escalation && (
-            <Card className="p-4 h-full sm:col-span-2">
-              <div className="flex items-center gap-1.5 text-xs text-primary font-medium mb-3 uppercase tracking-wide">
+            <div className="p-4 border-r border-b border-border sm:col-span-2">
+              <div className="flex items-center gap-1.5 text-xs text-primary font-mono font-medium mb-3 uppercase tracking-widest">
                 <LineChart className="w-3.5 h-3.5" /> Escalation, round by round
               </div>
               <div className="flex items-center gap-2 flex-wrap">
@@ -191,7 +182,7 @@ export function Explorer({ data, initialAthlete }: { data: BigAirEventData; init
                 ))}
                 <span className="text-xs text-muted-foreground ml-2">avg heat {rich ? 'total' : 'score'}, whole field</span>
               </div>
-            </Card>
+            </div>
           )}
         </div>
       )}
@@ -240,7 +231,7 @@ export function Explorer({ data, initialAthlete }: { data: BigAirEventData; init
         <Compare names={names} profiles={data.profiles} compare={compare} rich={rich} hasBonus={hasBonus} onRemove={(n) => toggleCompare(n)} onSelectSlot={setCompareSlot} />
       )}
 
-      <Card className="p-4 mt-8 text-xs text-muted-foreground leading-relaxed">
+      <div className="mt-10 pt-4 border-t border-border text-xs text-muted-foreground leading-relaxed">
         {rich ? (
           <>
             "Crash" = an attempt recorded as 0, exactly as labelled by the source platform. "Result" = sum of the top 3
@@ -259,7 +250,7 @@ export function Explorer({ data, initialAthlete }: { data: BigAirEventData; init
             {data.schema_note && <> {data.schema_note}</>}
           </>
         )}
-      </Card>
+      </div>
     </div>
   );
 }

@@ -67,18 +67,18 @@ export function Leaderboard({
 
   return (
     <div>
-      <div className="inline-flex rounded-lg border border-border p-0.5 mb-4">
+      <div className="flex items-center gap-6 border-b border-border pb-3 mb-4">
         <button
           type="button"
           onClick={() => setView('result')}
-          className={`px-3 py-1.5 text-sm rounded-md transition-colors ${view === 'result' ? 'bg-primary text-primary-foreground font-medium' : 'text-muted-foreground hover:text-foreground'}`}
+          className={`text-sm pb-3 -mb-3 border-b-2 transition-colors ${view === 'result' ? 'border-primary text-foreground font-medium' : 'border-transparent text-muted-foreground hover:text-foreground'}`}
         >
           Result
         </button>
         <button
           type="button"
           onClick={() => setView('stats')}
-          className={`px-3 py-1.5 text-sm rounded-md transition-colors ${view === 'stats' ? 'bg-primary text-primary-foreground font-medium' : 'text-muted-foreground hover:text-foreground'}`}
+          className={`text-sm pb-3 -mb-3 border-b-2 transition-colors ${view === 'stats' ? 'border-primary text-foreground font-medium' : 'border-transparent text-muted-foreground hover:text-foreground'}`}
         >
           Stats
         </button>
@@ -97,11 +97,11 @@ export function Leaderboard({
             Ranked by heat-scoring averages across the event. This can disagree with the actual result above
             (e.g. a strong average over more heats vs. a lower-scoring heat win in the final).
           </p>
-          <div className="overflow-x-auto rounded-lg border border-border">
+          <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-border bg-card/60">
-                  <th className="text-left font-semibold px-3 py-2.5 sticky left-0 bg-card/60">#</th>
+                <tr className="border-b border-t border-border">
+                  <th className="text-left font-semibold px-3 py-2.5 sticky left-0 bg-background">#</th>
                   <th className="text-left font-semibold px-3 py-2.5">Athlete</th>
                   {columns.map((col) => (
                     <th key={col.key} className="text-right font-semibold px-3 py-2.5 whitespace-nowrap">

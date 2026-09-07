@@ -4,6 +4,7 @@ import { buildBrandRankings, type BrandRanking } from '@/data/brandRankings';
 import { GKA_POINTS_TIERS } from '@/components/explorer/format';
 import { BrandBadge } from '@/components/BrandBadge';
 import { YearSelector } from '@/components/YearSelector';
+import { SectionHead } from '@/components/SectionHead';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Info } from 'lucide-react';
 
@@ -22,28 +23,32 @@ function ordinalLabel(n: number): string {
 function PointsExplainer() {
   const maxPoints = GKA_POINTS_TIERS[0][1];
   return (
-    <div className="rounded-lg border border-dashed border-border bg-card/20 p-5 mt-10">
-      <div className="flex items-center gap-1.5 text-xs text-primary font-medium mb-2 uppercase tracking-wide">
-        <Info className="w-3.5 h-3.5" /> How points work
-      </div>
-      <p className="text-sm text-muted-foreground mb-6 max-w-2xl">
+    <div className="mt-16">
+      <SectionHead>How points work</SectionHead>
+      <p className="text-sm text-muted-foreground mb-8 max-w-2xl">
         Each rider earns points for how they actually finished a competition's bracket, the same scale
         used for individual tour rankings. A brand's total is just the sum across every rider it sponsors,
         across every event.
       </p>
-      <div className="flex items-end gap-2 sm:gap-3 h-28">
-        {GKA_POINTS_TIERS.map(([rank, points], i) => {
+      <div className="flex items-end gap-2 sm:gap-4 h-32 border-b border-border pb-0">
+        {GKA_POINTS_TIERS.map(([rank, points]) => {
+          return (
+            <div key={rank} className="flex-1 flex flex-col items-center justify-end h-full">
+              <div className="text-xs font-mono font-bold tabular-nums mb-1.5">{points}</div>
+              <div
+                className="w-full bg-primary"
+                style={{ height: `${(points / maxPoints) * 100}%` }}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <div className="flex items-end gap-2 sm:gap-4 mt-2">
+        {GKA_POINTS_TIERS.map(([rank], i) => {
           const nextRank = GKA_POINTS_TIERS[i + 1]?.[0];
           const rangeLabel = nextRank == null ? `${ordinalLabel(rank)}+` : nextRank - 1 === rank ? ordinalLabel(rank) : `${ordinalLabel(rank)}–${ordinalLabel(nextRank - 1)}`;
           return (
-            <div key={rank} className="flex-1 flex flex-col items-center justify-end h-full">
-              <div className="text-xs font-display font-bold tabular-nums mb-1.5">{points}</div>
-              <div
-                className="w-full rounded-t-sm bg-gradient-to-t from-primary/50 to-primary"
-                style={{ height: `${(points / maxPoints) * 100}%` }}
-              />
-              <div className="text-[10px] text-muted-foreground mt-1.5 whitespace-nowrap">{rangeLabel}</div>
-            </div>
+            <div key={rank} className="flex-1 text-center text-[10px] text-muted-foreground whitespace-nowrap">{rangeLabel}</div>
           );
         })}
       </div>
@@ -64,26 +69,26 @@ export default function BrandsIndex() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="container mx-auto px-4 max-w-4xl py-16">
+      <div className="container mx-auto px-6 max-w-6xl py-16 md:py-20">
         <div className="flex justify-end mb-3">
           <YearSelector />
         </div>
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-4 leading-tight">
           Kite Brands <span className="text-primary">Championship.</span>
         </h1>
-        <p className="text-muted-foreground max-w-xl mb-8 leading-relaxed">
+        <p className="text-muted-foreground max-w-md leading-relaxed mb-8">
           Every sponsor, ranked by points. Each rider's points-by-finish across every
           competition they entered, summed for their brand. Same scale the tour itself uses to rank
           individual riders.
         </p>
 
-        <div className="inline-flex rounded-lg border border-border p-0.5 mb-6">
+        <div className="flex items-center gap-6 border-b border-border pb-3 mb-2">
           {(['Overall', 'Men', 'Women'] as Division[]).map((d) => (
             <button
               key={d}
               type="button"
               onClick={() => setDivision(d)}
-              className={`px-4 py-1.5 text-sm rounded-md transition-colors ${division === d ? 'bg-primary text-primary-foreground font-medium' : 'text-muted-foreground hover:text-foreground'}`}
+              className={`text-sm pb-3 -mb-3 border-b-2 transition-colors ${division === d ? 'border-primary text-foreground font-medium' : 'border-transparent text-muted-foreground hover:text-foreground'}`}
             >
               {d}
             </button>
@@ -91,20 +96,20 @@ export default function BrandsIndex() {
         </div>
 
         {!brands ? (
-          <div className="space-y-2">
+          <div className="space-y-2 mt-6">
             <Skeleton className="h-16 w-full" />
             <Skeleton className="h-16 w-full" />
             <Skeleton className="h-16 w-full" />
           </div>
         ) : (
-          <div className="rounded-lg border border-border overflow-hidden">
+          <div className="divide-y divide-border">
             {brands.map((b, i) => (
               <Link
                 key={b.brand}
                 to={`/athletes?q=${encodeURIComponent(b.brand)}&division=${division}`}
-                className="flex items-center gap-3 px-4 py-3 border-b border-border last:border-0 hover:bg-card/40 transition-colors"
+                className="flex items-center gap-4 py-4 hover:bg-card/30 transition-colors -mx-2 px-2"
               >
-                <span className="w-8 text-center font-bold tabular-nums text-muted-foreground shrink-0">{i + 1}</span>
+                <span className="w-8 text-center font-mono font-bold tabular-nums text-muted-foreground shrink-0">{i + 1}</span>
                 <BrandBadge brand={b.brand} size={36} />
                 <div className="min-w-0 flex-1">
                   <div className="font-medium truncate">{b.brand}</div>

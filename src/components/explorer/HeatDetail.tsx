@@ -1,5 +1,4 @@
 import type { Heat, AthleteProfile } from '@/types/bigAirEvent';
-import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Avatar } from './Avatar';
 import { MoveChips } from './MoveChips';
@@ -31,17 +30,18 @@ export function HeatDetail({
         <h2 className="font-display text-2xl font-bold">Heat {heat.heat_no}</h2>
       </div>
 
-      <div className="space-y-3">
+      <div className="divide-y divide-border border-t border-border">
         {participants.map((p) => {
           const profile = profiles[p.name];
           return (
-            <Card
+            <button
               key={p.name}
-              className="p-4 cursor-pointer hover:border-primary/50 transition-colors"
+              type="button"
+              className="w-full text-left py-4 cursor-pointer hover:bg-card/30 transition-colors -mx-2 px-2"
               onClick={() => onSelectAthlete(p.name)}
             >
               <div className="flex items-center gap-3 mb-3">
-                <span className="w-8 text-center font-bold tabular-nums text-muted-foreground shrink-0">
+                <span className="w-8 text-center font-mono font-bold tabular-nums text-muted-foreground shrink-0">
                   {MEDAL[p.placement] ?? p.placement}
                 </span>
                 <Avatar name={p.name} nationality={profile?.nationality ?? p.nationality ?? ''} size={36} />
@@ -75,7 +75,7 @@ export function HeatDetail({
                   </span>
                 </div>
               )}
-            </Card>
+            </button>
           );
         })}
       </div>
