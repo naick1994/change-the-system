@@ -6,6 +6,7 @@ import { fmt, pct, rankOf, delta, raceStandings, roundShort, eventRounds, ordina
 import { Avatar } from './Avatar';
 import { RoundLadder } from './RoundLadder';
 import { MoveChips } from './MoveChips';
+import { BrandBadge } from '@/components/BrandBadge';
 import { ArrowLeft } from 'lucide-react';
 import ATHLETE_BRANDS from '@/data/athleteBrands.json';
 
@@ -83,14 +84,17 @@ export function AthleteDetail({
         <div className="flex items-center gap-4">
           <Avatar name={name} nationality={p.nationality} size={64} />
           <div>
-            <h2 className="font-display text-2xl font-bold">
-              {name}
+            <div className="flex items-center gap-2 flex-wrap">
+              <h2 className="font-display text-2xl font-bold">{name}</h2>
               {ATHLETE_BRANDS[name as keyof typeof ATHLETE_BRANDS] && (
-                <span className="text-sm text-muted-foreground font-normal ml-2">
-                  · {ATHLETE_BRANDS[name as keyof typeof ATHLETE_BRANDS]}
-                </span>
+                <div className="flex items-center gap-1.5">
+                  <BrandBadge brand={ATHLETE_BRANDS[name as keyof typeof ATHLETE_BRANDS]} size={20} />
+                  <span className="text-sm text-muted-foreground">
+                    {ATHLETE_BRANDS[name as keyof typeof ATHLETE_BRANDS]}
+                  </span>
+                </div>
               )}
-            </h2>
+            </div>
             <div className={`text-sm font-medium mt-0.5 ${standing.rank <= 3 ? 'text-primary' : 'text-muted-foreground'}`}>
               {standing.resultLabel}
             </div>

@@ -537,3 +537,35 @@ export function seasonFacts(): SeasonFact[] {
     },
   ];
 }
+
+/**
+ * Which season storylines/records (from tourSpotlight, tourSpotlightMenTie,
+ * tourSpotlightWomen, and seasonFacts above) a given rider appears in — a
+ * lookup built from the same already-verified facts, not a new claim.
+ * Deliberately excludes the "losing" side of a comparison where crediting
+ * it would read as an insult rather than a highlight (e.g. Eszter Nagy,
+ * on the wrong end of the season's biggest blowout).
+ */
+const ATHLETE_SEASON_HIGHLIGHTS: Record<string, string[]> = {
+  'Leonardo Casati': [
+    "Only rider to reach the Final in all three men's events this season",
+    'Longest win streak of the season: 4 heats in a row (tied)',
+  ],
+  'Jamie Overbeek': [
+    'Longest win streak of the season: 4 heats in a row (tied)',
+    "Season's biggest trick: 10.00 at the Lords of Tram Final",
+    'Most consistent rider of the season: 5.4% crash rate',
+    'Closed the season with 7 heat wins, tied for most among men outside Leonardo Casati',
+  ],
+  'Lorenzo Casati': ['Closed the season with 7 heat wins, tied for most among men outside Leonardo Casati'],
+  'Stijn Mul': ['Part of the tightest heat of the season, won by 0.01'],
+  'Shahar Tsabary': ['Part of the tightest heat of the season, lost by 0.01'],
+  'Mikaili Sol': ['Biggest blowout of the season: won by 9.14'],
+  'Francesca Maini': ['One of three women to enter every event, closing the season with 3 heat wins'],
+  'Nathalie Lambrecht': ['One of three women to enter every event, closing the season with 3 heat wins'],
+  'Sarah Sadek': ['One of three women to enter every event, closing the season with 3 heat wins'],
+};
+
+export function athleteSeasonHighlights(name: string): string[] {
+  return ATHLETE_SEASON_HIGHLIGHTS[name] ?? [];
+}

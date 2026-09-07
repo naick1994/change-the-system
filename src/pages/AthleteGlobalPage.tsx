@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { buildGlobalAthletes, type GlobalAthlete } from '@/data/globalAthletes';
+import { athleteSeasonHighlights } from '@/data/eventsIndex';
+import { fmt, pct } from '@/components/explorer/format';
 import { Avatar } from '@/components/explorer/Avatar';
+import { BrandBadge } from '@/components/BrandBadge';
 import { Card } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
-import { ArrowLeft, ArrowUpRight } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, Sparkles } from 'lucide-react';
 import ATHLETE_BRANDS from '@/data/athleteBrands.json';
 
 export default function AthleteGlobalPage() {
@@ -19,6 +22,8 @@ export default function AthleteGlobalPage() {
       setAthlete(all.find((a) => a.name === name) ?? null);
     });
   }, [name]);
+
+  const athleteHighlights = athlete ? athleteSeasonHighlights(athlete.name) : [];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -36,25 +41,87 @@ export default function AthleteGlobalPage() {
           <p className="text-muted-foreground">No athlete found with that name.</p>
         ) : (
           <>
-            <div className="flex items-center gap-4 mb-8">
-              <Avatar name={athlete.name} nationality={athlete.nationality} size={64} />
-              <div>
-                <h1 className="font-display text-3xl font-bold">
-                  {athlete.name}
+            <div className="flex items-center gap-5 flex-wrap mb-8">
+              <Avatar name={athlete.name} nationality={athlete.nationality} size={88} />
+              <div className="flex-1 min-w-[220px]">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <h1 className="font-display text-3xl font-bold">{athlete.name}</h1>
                   {ATHLETE_BRANDS[athlete.name as keyof typeof ATHLETE_BRANDS] && (
-                    <span className="text-base text-muted-foreground font-normal ml-2">
-                      · {ATHLETE_BRANDS[athlete.name as keyof typeof ATHLETE_BRANDS]}
-                    </span>
+                    <div className="flex items-center gap-1.5">
+                      <BrandBadge brand={ATHLETE_BRANDS[athlete.name as keyof typeof ATHLETE_BRANDS]} size={24} />
+                      <span className="text-sm text-muted-foreground">
+                        {ATHLETE_BRANDS[athlete.name as keyof typeof ATHLETE_BRANDS]}
+                      </span>
+                    </div>
                   )}
-                </h1>
-                <div className="text-sm text-muted-foreground mt-0.5">
-                  {athlete.wins} win{athlete.wins !== 1 ? 's' : ''} · {athlete.podiums} podium{athlete.podiums !== 1 ? 's' : ''} · {athlete.events.length} event{athlete.events.length !== 1 ? 's' : ''} entered
                 </div>
-                <div className="text-sm mt-1">
-                  <span className="font-display font-bold tabular-nums">{athlete.points.toLocaleString('en-US')}</span>
-                  <span className="text-muted-foreground"> points</span>
+                <div className="flex flex-wrap gap-5 mt-3">
+                  <div>
+                    <div className="font-display text-lg font-bold leading-none tabular-nums">{athlete.wins}</div>
+                    <div className="text-[11px] text-muted-foreground mt-0.5">Win{athlete.wins !== 1 ? 's' : ''}</div>
+                  </div>
+                  <div>
+                    <div className="font-display text-lg font-bold leading-none tabular-nums">{athlete.podiums}</div>
+                    <div className="text-[11px] text-muted-foreground mt-0.5">Podium{athlete.podiums !== 1 ? 's' : ''}</div>
+                  </div>
+                  <div>
+                    <div className="font-display text-lg font-bold leading-none tabular-nums">{athlete.events.length}</div>
+                    <div className="text-[11px] text-muted-foreground mt-0.5">Event{athlete.events.length !== 1 ? 's' : ''} entered</div>
+                  </div>
+                  <div>
+                    <div className="font-display text-lg font-bold leading-none tabular-nums">{athlete.points.toLocaleString('en-US')}</div>
+                    <div className="text-[11px] text-muted-foreground mt-0.5">Points</div>
+                  </div>
                 </div>
               </div>
+            </div>
+
+            {athleteHighlights.length > 0 && (
+              <div className="rounded-lg border border-dashed border-border bg-card/20 p-4 mb-8">
+                <div className="flex items-center gap-1.5 text-xs text-primary font-medium mb-2.5 uppercase tracking-wide">
+                  <Sparkles className="w-3.5 h-3.5" /> Season highlights
+                </div>
+                <ul className="space-y-1.5">
+                  {athleteHighlights.map((h) => (
+                    <li key={h} className="text-sm text-foreground/90 flex items-start gap-2">
+                      <span className="text-primary mt-1 text-xs">●</span>
+                      <span>{h}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-3">Career stats</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+              <Card className="p-3.5">
+                <div className="font-display text-xl font-bold tabular-nums">{pct(athlete.heatWinRate)}</div>
+                <div className="text-[11px] text-muted-foreground mt-0.5">
+                  Heat win rate ({athlete.heatsWon}/{athlete.heatsPlayed})
+                </div>
+              </Card>
+              {athlete.crashRate != null && (
+                <Card className="p-3.5">
+                  <div className="font-display text-xl font-bold tabular-nums">{pct(athlete.crashRate)}</div>
+                  <div className="text-[11px] text-muted-foreground mt-0.5">Crash rate</div>
+                </Card>
+              )}
+              {athlete.bestHeatScore && (
+                <Card className="p-3.5">
+                  <div className="font-display text-xl font-bold tabular-nums">{fmt(athlete.bestHeatScore.value)}</div>
+                  <div className="text-[11px] text-muted-foreground mt-0.5">
+                    Best heat score, {athlete.bestHeatScore.competition} ({athlete.bestHeatScore.division})
+                  </div>
+                </Card>
+              )}
+              {athlete.bestMove && (
+                <Card className="p-3.5">
+                  <div className="font-display text-xl font-bold tabular-nums">{fmt(athlete.bestMove.value)}</div>
+                  <div className="text-[11px] text-muted-foreground mt-0.5">
+                    Best single move, {athlete.bestMove.competition} ({athlete.bestMove.division})
+                  </div>
+                </Card>
+              )}
             </div>
 
             <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-3">Results by competition</h3>
