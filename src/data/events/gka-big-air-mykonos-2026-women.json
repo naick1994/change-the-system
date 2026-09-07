@@ -1,0 +1,773 @@
+{
+  "heats": [
+    {
+      "heat_no": 1,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 1,
+      "participants": [
+        {
+          "name": "Sarah Sadek",
+          "nationality": "EG",
+          "score": 15.2,
+          "placement": 1
+        },
+        {
+          "name": "Aya Kasabova",
+          "nationality": "BG",
+          "score": 10.81,
+          "placement": 2
+        },
+        {
+          "name": "Rose Hourtoulle",
+          "nationality": "FR",
+          "score": 7.9,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 2,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 2,
+      "participants": [
+        {
+          "name": "Nathalie Lambrecht",
+          "nationality": "SE",
+          "score": 17.73,
+          "placement": 1
+        },
+        {
+          "name": "Francesca Maini",
+          "nationality": "GB",
+          "score": 17.14,
+          "placement": 2
+        },
+        {
+          "name": "Gisela Pulido Borrell",
+          "nationality": "ES",
+          "score": 15.33,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 3,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 3,
+      "participants": [
+        {
+          "name": "Alice Ruggiu",
+          "nationality": "IT",
+          "score": 17.73,
+          "placement": 1
+        },
+        {
+          "name": "Alessa Mensch",
+          "nationality": "DE",
+          "score": 14.77,
+          "placement": 2
+        },
+        {
+          "name": "Kailani Friedrich",
+          "nationality": "AT",
+          "score": 8.97,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 4,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 4,
+      "participants": [
+        {
+          "name": "Mikaili Sol",
+          "nationality": "BR",
+          "score": 19.84,
+          "placement": 1
+        },
+        {
+          "name": "Eszter Nagy",
+          "nationality": "HU",
+          "score": 10.7,
+          "placement": 2
+        },
+        {
+          "name": "Anastasia Pitidi",
+          "nationality": "GR",
+          "score": 3.03,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 5,
+      "round": "Round 2",
+      "round_depth": 2,
+      "local_heat_no": 1,
+      "participants": [
+        {
+          "name": "Alessa Mensch",
+          "nationality": "DE",
+          "score": 14.68,
+          "placement": 1
+        },
+        {
+          "name": "Eszter Nagy",
+          "nationality": "HU",
+          "score": 13.27,
+          "placement": 2
+        },
+        {
+          "name": "Gisela Pulido Borrell",
+          "nationality": "ES",
+          "score": 12.0,
+          "placement": 3
+        },
+        {
+          "name": "Rose Hourtoulle",
+          "nationality": "FR",
+          "score": 7.9,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 6,
+      "round": "Round 2",
+      "round_depth": 2,
+      "local_heat_no": 2,
+      "participants": [
+        {
+          "name": "Francesca Maini",
+          "nationality": "GB",
+          "score": 17.47,
+          "placement": 1
+        },
+        {
+          "name": "Aya Kasabova",
+          "nationality": "BG",
+          "score": 13.39,
+          "placement": 2
+        },
+        {
+          "name": "Kailani Friedrich",
+          "nationality": "AT",
+          "score": 5.23,
+          "placement": 3
+        },
+        {
+          "name": "Anastasia Pitidi",
+          "nationality": "GR",
+          "score": 4.3,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 7,
+      "round": "Semi-Finals",
+      "round_depth": 4,
+      "local_heat_no": 1,
+      "participants": [
+        {
+          "name": "Mikaili Sol",
+          "nationality": "BR",
+          "score": 20.27,
+          "placement": 1
+        },
+        {
+          "name": "Francesca Maini",
+          "nationality": "GB",
+          "score": 17.6,
+          "placement": 2
+        },
+        {
+          "name": "Eszter Nagy",
+          "nationality": "HU",
+          "score": 11.62,
+          "placement": 3
+        },
+        {
+          "name": "Alice Ruggiu",
+          "nationality": "IT",
+          "score": 10.37,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 8,
+      "round": "Final",
+      "round_depth": 5,
+      "local_heat_no": 1,
+      "participants": [
+        {
+          "name": "Mikaili Sol",
+          "nationality": "BR",
+          "score": 22.54,
+          "placement": 1
+        },
+        {
+          "name": "Aya Kasabova",
+          "nationality": "BG",
+          "score": 20.3,
+          "placement": 2
+        },
+        {
+          "name": "Francesca Maini",
+          "nationality": "GB",
+          "score": 18.59,
+          "placement": 3
+        },
+        {
+          "name": "Sarah Sadek",
+          "nationality": "EG",
+          "score": 17.13,
+          "placement": 4
+        }
+      ]
+    }
+  ],
+  "profiles": {
+    "Sarah Sadek": {
+      "name": "Sarah Sadek",
+      "nationality": "EG",
+      "n_heats": 2,
+      "wins": 1,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "avg_score": 16.165,
+      "best_score": 17.13,
+      "stdev_score": 0.965,
+      "heats": [
+        {
+          "heat_no": 1,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Aya Kasabova",
+            "Rose Hourtoulle"
+          ],
+          "score": 15.2
+        },
+        {
+          "heat_no": 8,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 4,
+          "opponents": [
+            "Mikaili Sol",
+            "Aya Kasabova",
+            "Francesca Maini"
+          ],
+          "score": 17.13
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Aya Kasabova": {
+      "name": "Aya Kasabova",
+      "nationality": "BG",
+      "n_heats": 3,
+      "wins": 0,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "avg_score": 14.833,
+      "best_score": 20.3,
+      "stdev_score": 4.006,
+      "heats": [
+        {
+          "heat_no": 1,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Sarah Sadek",
+            "Rose Hourtoulle"
+          ],
+          "score": 10.81
+        },
+        {
+          "heat_no": 6,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Francesca Maini",
+            "Kailani Friedrich",
+            "Anastasia Pitidi"
+          ],
+          "score": 13.39
+        },
+        {
+          "heat_no": 8,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 2,
+          "opponents": [
+            "Mikaili Sol",
+            "Francesca Maini",
+            "Sarah Sadek"
+          ],
+          "score": 20.3
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Rose Hourtoulle": {
+      "name": "Rose Hourtoulle",
+      "nationality": "FR",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 7.9,
+      "best_score": 7.9,
+      "stdev_score": 0.0,
+      "heats": [
+        {
+          "heat_no": 1,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Sarah Sadek",
+            "Aya Kasabova"
+          ],
+          "score": 7.9
+        },
+        {
+          "heat_no": 5,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Alessa Mensch",
+            "Eszter Nagy",
+            "Gisela Pulido Borrell"
+          ],
+          "score": 7.9
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Nathalie Lambrecht": {
+      "name": "Nathalie Lambrecht",
+      "nationality": "SE",
+      "n_heats": 1,
+      "wins": 1,
+      "max_round_depth": 1,
+      "max_round": "Round 1",
+      "avg_score": 17.73,
+      "best_score": 17.73,
+      "stdev_score": 0.0,
+      "heats": [
+        {
+          "heat_no": 2,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Francesca Maini",
+            "Gisela Pulido Borrell"
+          ],
+          "score": 17.73
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Francesca Maini": {
+      "name": "Francesca Maini",
+      "nationality": "GB",
+      "n_heats": 4,
+      "wins": 1,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "avg_score": 17.7,
+      "best_score": 18.59,
+      "stdev_score": 0.541,
+      "heats": [
+        {
+          "heat_no": 2,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Nathalie Lambrecht",
+            "Gisela Pulido Borrell"
+          ],
+          "score": 17.14
+        },
+        {
+          "heat_no": 6,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Aya Kasabova",
+            "Kailani Friedrich",
+            "Anastasia Pitidi"
+          ],
+          "score": 17.47
+        },
+        {
+          "heat_no": 7,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 2,
+          "opponents": [
+            "Mikaili Sol",
+            "Eszter Nagy",
+            "Alice Ruggiu"
+          ],
+          "score": 17.6
+        },
+        {
+          "heat_no": 8,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 3,
+          "opponents": [
+            "Mikaili Sol",
+            "Aya Kasabova",
+            "Sarah Sadek"
+          ],
+          "score": 18.59
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Gisela Pulido Borrell": {
+      "name": "Gisela Pulido Borrell",
+      "nationality": "ES",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 13.665,
+      "best_score": 15.33,
+      "stdev_score": 1.665,
+      "heats": [
+        {
+          "heat_no": 2,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Nathalie Lambrecht",
+            "Francesca Maini"
+          ],
+          "score": 15.33
+        },
+        {
+          "heat_no": 5,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Alessa Mensch",
+            "Eszter Nagy",
+            "Rose Hourtoulle"
+          ],
+          "score": 12.0
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Alice Ruggiu": {
+      "name": "Alice Ruggiu",
+      "nationality": "IT",
+      "n_heats": 2,
+      "wins": 1,
+      "max_round_depth": 4,
+      "max_round": "Semi-Finals",
+      "avg_score": 14.05,
+      "best_score": 17.73,
+      "stdev_score": 3.68,
+      "heats": [
+        {
+          "heat_no": 3,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Alessa Mensch",
+            "Kailani Friedrich"
+          ],
+          "score": 17.73
+        },
+        {
+          "heat_no": 7,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 4,
+          "opponents": [
+            "Mikaili Sol",
+            "Francesca Maini",
+            "Eszter Nagy"
+          ],
+          "score": 10.37
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Alessa Mensch": {
+      "name": "Alessa Mensch",
+      "nationality": "DE",
+      "n_heats": 2,
+      "wins": 1,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 14.725,
+      "best_score": 14.77,
+      "stdev_score": 0.045,
+      "heats": [
+        {
+          "heat_no": 3,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Alice Ruggiu",
+            "Kailani Friedrich"
+          ],
+          "score": 14.77
+        },
+        {
+          "heat_no": 5,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Eszter Nagy",
+            "Gisela Pulido Borrell",
+            "Rose Hourtoulle"
+          ],
+          "score": 14.68
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Kailani Friedrich": {
+      "name": "Kailani Friedrich",
+      "nationality": "AT",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 7.1,
+      "best_score": 8.97,
+      "stdev_score": 1.87,
+      "heats": [
+        {
+          "heat_no": 3,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Alice Ruggiu",
+            "Alessa Mensch"
+          ],
+          "score": 8.97
+        },
+        {
+          "heat_no": 6,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Francesca Maini",
+            "Aya Kasabova",
+            "Anastasia Pitidi"
+          ],
+          "score": 5.23
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Mikaili Sol": {
+      "name": "Mikaili Sol",
+      "nationality": "BR",
+      "n_heats": 3,
+      "wins": 3,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "avg_score": 20.883,
+      "best_score": 22.54,
+      "stdev_score": 1.185,
+      "heats": [
+        {
+          "heat_no": 4,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Eszter Nagy",
+            "Anastasia Pitidi"
+          ],
+          "score": 19.84
+        },
+        {
+          "heat_no": 7,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 1,
+          "opponents": [
+            "Francesca Maini",
+            "Eszter Nagy",
+            "Alice Ruggiu"
+          ],
+          "score": 20.27
+        },
+        {
+          "heat_no": 8,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 1,
+          "opponents": [
+            "Aya Kasabova",
+            "Francesca Maini",
+            "Sarah Sadek"
+          ],
+          "score": 22.54
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Eszter Nagy": {
+      "name": "Eszter Nagy",
+      "nationality": "HU",
+      "n_heats": 3,
+      "wins": 0,
+      "max_round_depth": 4,
+      "max_round": "Semi-Finals",
+      "avg_score": 11.863,
+      "best_score": 13.27,
+      "stdev_score": 1.063,
+      "heats": [
+        {
+          "heat_no": 4,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Mikaili Sol",
+            "Anastasia Pitidi"
+          ],
+          "score": 10.7
+        },
+        {
+          "heat_no": 5,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Alessa Mensch",
+            "Gisela Pulido Borrell",
+            "Rose Hourtoulle"
+          ],
+          "score": 13.27
+        },
+        {
+          "heat_no": 7,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 3,
+          "opponents": [
+            "Mikaili Sol",
+            "Francesca Maini",
+            "Alice Ruggiu"
+          ],
+          "score": 11.62
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Anastasia Pitidi": {
+      "name": "Anastasia Pitidi",
+      "nationality": "GR",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 3.665,
+      "best_score": 4.3,
+      "stdev_score": 0.635,
+      "heats": [
+        {
+          "heat_no": 4,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Mikaili Sol",
+            "Eszter Nagy"
+          ],
+          "score": 3.03
+        },
+        {
+          "heat_no": 6,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Francesca Maini",
+            "Aya Kasabova",
+            "Kailani Friedrich"
+          ],
+          "score": 4.3
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    }
+  },
+  "field": {
+    "avg_score": 13.357,
+    "best_score": 14.88,
+    "n_athletes": 12
+  },
+  "winner": "Mikaili Sol",
+  "schema_note": "GKA ladder score only: single judge score per heat, no move/auto-imp/impression breakdown published by the source."
+}

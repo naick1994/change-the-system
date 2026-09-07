@@ -1,0 +1,1773 @@
+{
+  "heats": [
+    {
+      "heat_no": 1,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 1,
+      "participants": [
+        {
+          "name": "Shahar Tsabary",
+          "nationality": "IL",
+          "score": 18.23,
+          "placement": 1
+        },
+        {
+          "name": "Maxwell Dahl",
+          "nationality": "DK",
+          "score": 16.46,
+          "placement": 2
+        },
+        {
+          "name": "Josh Gillitt",
+          "nationality": "ZA",
+          "score": 16.06,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 2,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 2,
+      "participants": [
+        {
+          "name": "Jamie Overbeek",
+          "nationality": "NL",
+          "score": 17.17,
+          "placement": 1
+        },
+        {
+          "name": "Andrea Principi",
+          "nationality": "IT",
+          "score": 14.23,
+          "placement": 2
+        },
+        {
+          "name": "Yucel Paralik",
+          "nationality": "CY",
+          "score": 5.57,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 3,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 3,
+      "participants": [
+        {
+          "name": "Josué San Ferreira",
+          "nationality": "BR",
+          "score": 18.06,
+          "placement": 1
+        },
+        {
+          "name": "Jinne Boer",
+          "nationality": "NL",
+          "score": 16.33,
+          "placement": 2
+        },
+        {
+          "name": "Cohan van Dijk",
+          "nationality": "NL",
+          "score": 14.5,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 4,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 4,
+      "participants": [
+        {
+          "name": "Leonardo Casati",
+          "nationality": "IT",
+          "score": 20.24,
+          "placement": 1
+        },
+        {
+          "name": "Hugo Wigglesworth",
+          "nationality": "NZ",
+          "score": 17.03,
+          "placement": 2
+        },
+        {
+          "name": "Max Tullett",
+          "nationality": "GB",
+          "score": 11.86,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 5,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 5,
+      "participants": [
+        {
+          "name": "Zac Adams",
+          "nationality": "US",
+          "score": 15.8,
+          "placement": 1
+        },
+        {
+          "name": "Giel Vlugt",
+          "nationality": "NL",
+          "score": 15.21,
+          "placement": 2
+        },
+        {
+          "name": "Jason van der Spuy",
+          "nationality": "ZA",
+          "score": 13.8,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 6,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 6,
+      "participants": [
+        {
+          "name": "Lorenzo Casati",
+          "nationality": "ES",
+          "score": 21.46,
+          "placement": 1
+        },
+        {
+          "name": "Parker Sage",
+          "nationality": "US",
+          "score": 17.64,
+          "placement": 2
+        },
+        {
+          "name": "Luca Ceruti",
+          "nationality": "ZA",
+          "score": 14.9,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 7,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 7,
+      "participants": [
+        {
+          "name": "Stijn Mul",
+          "nationality": "NL",
+          "score": 17.54,
+          "placement": 1
+        },
+        {
+          "name": "Marten Koblischke",
+          "nationality": "DE",
+          "score": 14.93,
+          "placement": 2
+        },
+        {
+          "name": "Kimo Verkerk",
+          "nationality": "NL",
+          "score": 14.63,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 8,
+      "round": "Round 1",
+      "round_depth": 1,
+      "local_heat_no": 8,
+      "participants": [
+        {
+          "name": "Jeremy Burlando",
+          "nationality": "ES",
+          "score": 19.6,
+          "placement": 1
+        },
+        {
+          "name": "Finn Flügel",
+          "nationality": "DE",
+          "score": 17.96,
+          "placement": 2
+        },
+        {
+          "name": "Baptiste Bourdoulous",
+          "nationality": "GR",
+          "score": 14.09,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 9,
+      "round": "Round 2",
+      "round_depth": 2,
+      "local_heat_no": 1,
+      "participants": [
+        {
+          "name": "Andrea Principi",
+          "nationality": "IT",
+          "score": 19.3,
+          "placement": 1
+        },
+        {
+          "name": "Maxwell Dahl",
+          "nationality": "DK",
+          "score": 17.43,
+          "placement": 2
+        },
+        {
+          "name": "Cohan van Dijk",
+          "nationality": "NL",
+          "score": 17.01,
+          "placement": 3
+        },
+        {
+          "name": "Max Tullett",
+          "nationality": "GB",
+          "score": 16.95,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 10,
+      "round": "Round 2",
+      "round_depth": 2,
+      "local_heat_no": 2,
+      "participants": [
+        {
+          "name": "Hugo Wigglesworth",
+          "nationality": "NZ",
+          "score": 18.97,
+          "placement": 1
+        },
+        {
+          "name": "Yucel Paralik",
+          "nationality": "CY",
+          "score": 15.6,
+          "placement": 2
+        },
+        {
+          "name": "Josh Gillitt",
+          "nationality": "ZA",
+          "score": 15.53,
+          "placement": 3
+        },
+        {
+          "name": "Jinne Boer",
+          "nationality": "NL",
+          "score": 12.47,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 11,
+      "round": "Round 2",
+      "round_depth": 2,
+      "local_heat_no": 3,
+      "participants": [
+        {
+          "name": "Giel Vlugt",
+          "nationality": "NL",
+          "score": 17.6,
+          "placement": 1
+        },
+        {
+          "name": "Parker Sage",
+          "nationality": "US",
+          "score": 16.03,
+          "placement": 2
+        },
+        {
+          "name": "Kimo Verkerk",
+          "nationality": "NL",
+          "score": 15.37,
+          "placement": 3
+        },
+        {
+          "name": "Baptiste Bourdoulous",
+          "nationality": "GR",
+          "score": 13.06,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 12,
+      "round": "Round 2",
+      "round_depth": 2,
+      "local_heat_no": 4,
+      "participants": [
+        {
+          "name": "Finn Flügel",
+          "nationality": "DE",
+          "score": 20.97,
+          "placement": 1
+        },
+        {
+          "name": "Jason van der Spuy",
+          "nationality": "ZA",
+          "score": 15.87,
+          "placement": 2
+        },
+        {
+          "name": "Marten Koblischke",
+          "nationality": "DE",
+          "score": 15.5,
+          "placement": 3
+        },
+        {
+          "name": "Luca Ceruti",
+          "nationality": "ZA",
+          "score": 14.5,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 13,
+      "round": "Round 3",
+      "round_depth": 3,
+      "local_heat_no": 1,
+      "participants": [
+        {
+          "name": "Shahar Tsabary",
+          "nationality": "IL",
+          "score": 18.13,
+          "placement": 1
+        },
+        {
+          "name": "Jamie Overbeek",
+          "nationality": "NL",
+          "score": 18.0,
+          "placement": 2
+        },
+        {
+          "name": "Giel Vlugt",
+          "nationality": "NL",
+          "score": 16.43,
+          "placement": 3
+        },
+        {
+          "name": "Yucel Paralik",
+          "nationality": "CY",
+          "score": 15.2,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 14,
+      "round": "Round 3",
+      "round_depth": 3,
+      "local_heat_no": 2,
+      "participants": [
+        {
+          "name": "Leonardo Casati",
+          "nationality": "IT",
+          "score": 22.2,
+          "placement": 1
+        },
+        {
+          "name": "Josué San Ferreira",
+          "nationality": "BR",
+          "score": 20.47,
+          "placement": 2
+        },
+        {
+          "name": "Finn Flügel",
+          "nationality": "DE",
+          "score": 19.79,
+          "placement": 3
+        },
+        {
+          "name": "Maxwell Dahl",
+          "nationality": "DK",
+          "score": 16.3,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 15,
+      "round": "Round 3",
+      "round_depth": 3,
+      "local_heat_no": 3,
+      "participants": [
+        {
+          "name": "Lorenzo Casati",
+          "nationality": "ES",
+          "score": 23.31,
+          "placement": 1
+        },
+        {
+          "name": "Jason van der Spuy",
+          "nationality": "ZA",
+          "score": 16.1,
+          "placement": 2
+        },
+        {
+          "name": "Andrea Principi",
+          "nationality": "IT",
+          "score": 14.26,
+          "placement": 3
+        },
+        {
+          "name": "Zac Adams",
+          "nationality": "US",
+          "score": 13.34,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 16,
+      "round": "Round 3",
+      "round_depth": 3,
+      "local_heat_no": 4,
+      "participants": [
+        {
+          "name": "Jeremy Burlando",
+          "nationality": "ES",
+          "score": 18.33,
+          "placement": 1
+        },
+        {
+          "name": "Hugo Wigglesworth",
+          "nationality": "NZ",
+          "score": 18.04,
+          "placement": 2
+        },
+        {
+          "name": "Parker Sage",
+          "nationality": "US",
+          "score": 16.5,
+          "placement": 3
+        },
+        {
+          "name": "Stijn Mul",
+          "nationality": "NL",
+          "score": 14.8,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 17,
+      "round": "Semi-Finals",
+      "round_depth": 4,
+      "local_heat_no": 1,
+      "participants": [
+        {
+          "name": "Leonardo Casati",
+          "nationality": "IT",
+          "score": 21.77,
+          "placement": 1
+        },
+        {
+          "name": "Shahar Tsabary",
+          "nationality": "IL",
+          "score": 19.8,
+          "placement": 2
+        },
+        {
+          "name": "Hugo Wigglesworth",
+          "nationality": "NZ",
+          "score": 19.63,
+          "placement": 3
+        },
+        {
+          "name": "Jason van der Spuy",
+          "nationality": "ZA",
+          "score": 18.73,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 18,
+      "round": "Semi-Finals",
+      "round_depth": 4,
+      "local_heat_no": 2,
+      "participants": [
+        {
+          "name": "Lorenzo Casati",
+          "nationality": "ES",
+          "score": 23.27,
+          "placement": 1
+        },
+        {
+          "name": "Jamie Overbeek",
+          "nationality": "NL",
+          "score": 22.94,
+          "placement": 2
+        },
+        {
+          "name": "Josué San Ferreira",
+          "nationality": "BR",
+          "score": 19.64,
+          "placement": 3
+        },
+        {
+          "name": "Jeremy Burlando",
+          "nationality": "ES",
+          "score": 18.2,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 19,
+      "round": "Final",
+      "round_depth": 5,
+      "local_heat_no": 1,
+      "participants": [
+        {
+          "name": "Leonardo Casati",
+          "nationality": "IT",
+          "score": 23.77,
+          "placement": 1
+        },
+        {
+          "name": "Lorenzo Casati",
+          "nationality": "ES",
+          "score": 23.1,
+          "placement": 2
+        },
+        {
+          "name": "Shahar Tsabary",
+          "nationality": "IL",
+          "score": 22.54,
+          "placement": 3
+        },
+        {
+          "name": "Jamie Overbeek",
+          "nationality": "NL",
+          "score": 20.67,
+          "placement": 4
+        }
+      ]
+    }
+  ],
+  "profiles": {
+    "Shahar Tsabary": {
+      "name": "Shahar Tsabary",
+      "nationality": "IL",
+      "n_heats": 4,
+      "wins": 2,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "avg_score": 19.675,
+      "best_score": 22.54,
+      "stdev_score": 1.782,
+      "heats": [
+        {
+          "heat_no": 1,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Maxwell Dahl",
+            "Josh Gillitt"
+          ],
+          "score": 18.23
+        },
+        {
+          "heat_no": 13,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 1,
+          "opponents": [
+            "Jamie Overbeek",
+            "Giel Vlugt",
+            "Yucel Paralik"
+          ],
+          "score": 18.13
+        },
+        {
+          "heat_no": 17,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 2,
+          "opponents": [
+            "Leonardo Casati",
+            "Hugo Wigglesworth",
+            "Jason van der Spuy"
+          ],
+          "score": 19.8
+        },
+        {
+          "heat_no": 19,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 3,
+          "opponents": [
+            "Leonardo Casati",
+            "Lorenzo Casati",
+            "Jamie Overbeek"
+          ],
+          "score": 22.54
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Maxwell Dahl": {
+      "name": "Maxwell Dahl",
+      "nationality": "DK",
+      "n_heats": 3,
+      "wins": 0,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "avg_score": 16.73,
+      "best_score": 17.43,
+      "stdev_score": 0.499,
+      "heats": [
+        {
+          "heat_no": 1,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Shahar Tsabary",
+            "Josh Gillitt"
+          ],
+          "score": 16.46
+        },
+        {
+          "heat_no": 9,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Andrea Principi",
+            "Cohan van Dijk",
+            "Max Tullett"
+          ],
+          "score": 17.43
+        },
+        {
+          "heat_no": 14,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 4,
+          "opponents": [
+            "Leonardo Casati",
+            "Josué San Ferreira",
+            "Finn Flügel"
+          ],
+          "score": 16.3
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Josh Gillitt": {
+      "name": "Josh Gillitt",
+      "nationality": "ZA",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 15.795,
+      "best_score": 16.06,
+      "stdev_score": 0.265,
+      "heats": [
+        {
+          "heat_no": 1,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Shahar Tsabary",
+            "Maxwell Dahl"
+          ],
+          "score": 16.06
+        },
+        {
+          "heat_no": 10,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Hugo Wigglesworth",
+            "Yucel Paralik",
+            "Jinne Boer"
+          ],
+          "score": 15.53
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Jamie Overbeek": {
+      "name": "Jamie Overbeek",
+      "nationality": "NL",
+      "n_heats": 4,
+      "wins": 1,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "avg_score": 19.695,
+      "best_score": 22.94,
+      "stdev_score": 2.276,
+      "heats": [
+        {
+          "heat_no": 2,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Andrea Principi",
+            "Yucel Paralik"
+          ],
+          "score": 17.17
+        },
+        {
+          "heat_no": 13,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 2,
+          "opponents": [
+            "Shahar Tsabary",
+            "Giel Vlugt",
+            "Yucel Paralik"
+          ],
+          "score": 18.0
+        },
+        {
+          "heat_no": 18,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 2,
+          "opponents": [
+            "Lorenzo Casati",
+            "Josué San Ferreira",
+            "Jeremy Burlando"
+          ],
+          "score": 22.94
+        },
+        {
+          "heat_no": 19,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 4,
+          "opponents": [
+            "Leonardo Casati",
+            "Lorenzo Casati",
+            "Shahar Tsabary"
+          ],
+          "score": 20.67
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Andrea Principi": {
+      "name": "Andrea Principi",
+      "nationality": "IT",
+      "n_heats": 3,
+      "wins": 1,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "avg_score": 15.93,
+      "best_score": 19.3,
+      "stdev_score": 2.383,
+      "heats": [
+        {
+          "heat_no": 2,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Jamie Overbeek",
+            "Yucel Paralik"
+          ],
+          "score": 14.23
+        },
+        {
+          "heat_no": 9,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Maxwell Dahl",
+            "Cohan van Dijk",
+            "Max Tullett"
+          ],
+          "score": 19.3
+        },
+        {
+          "heat_no": 15,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 3,
+          "opponents": [
+            "Lorenzo Casati",
+            "Jason van der Spuy",
+            "Zac Adams"
+          ],
+          "score": 14.26
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Yucel Paralik": {
+      "name": "Yucel Paralik",
+      "nationality": "CY",
+      "n_heats": 3,
+      "wins": 0,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "avg_score": 12.123,
+      "best_score": 15.6,
+      "stdev_score": 4.637,
+      "heats": [
+        {
+          "heat_no": 2,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Jamie Overbeek",
+            "Andrea Principi"
+          ],
+          "score": 5.57
+        },
+        {
+          "heat_no": 10,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Hugo Wigglesworth",
+            "Josh Gillitt",
+            "Jinne Boer"
+          ],
+          "score": 15.6
+        },
+        {
+          "heat_no": 13,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 4,
+          "opponents": [
+            "Shahar Tsabary",
+            "Jamie Overbeek",
+            "Giel Vlugt"
+          ],
+          "score": 15.2
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Josué San Ferreira": {
+      "name": "Josué San Ferreira",
+      "nationality": "BR",
+      "n_heats": 3,
+      "wins": 1,
+      "max_round_depth": 4,
+      "max_round": "Semi-Finals",
+      "avg_score": 19.39,
+      "best_score": 20.47,
+      "stdev_score": 1.0,
+      "heats": [
+        {
+          "heat_no": 3,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Jinne Boer",
+            "Cohan van Dijk"
+          ],
+          "score": 18.06
+        },
+        {
+          "heat_no": 14,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 2,
+          "opponents": [
+            "Leonardo Casati",
+            "Finn Flügel",
+            "Maxwell Dahl"
+          ],
+          "score": 20.47
+        },
+        {
+          "heat_no": 18,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 3,
+          "opponents": [
+            "Lorenzo Casati",
+            "Jamie Overbeek",
+            "Jeremy Burlando"
+          ],
+          "score": 19.64
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Jinne Boer": {
+      "name": "Jinne Boer",
+      "nationality": "NL",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 14.4,
+      "best_score": 16.33,
+      "stdev_score": 1.93,
+      "heats": [
+        {
+          "heat_no": 3,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Josué San Ferreira",
+            "Cohan van Dijk"
+          ],
+          "score": 16.33
+        },
+        {
+          "heat_no": 10,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Hugo Wigglesworth",
+            "Yucel Paralik",
+            "Josh Gillitt"
+          ],
+          "score": 12.47
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Cohan van Dijk": {
+      "name": "Cohan van Dijk",
+      "nationality": "NL",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 15.755,
+      "best_score": 17.01,
+      "stdev_score": 1.255,
+      "heats": [
+        {
+          "heat_no": 3,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Josué San Ferreira",
+            "Jinne Boer"
+          ],
+          "score": 14.5
+        },
+        {
+          "heat_no": 9,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Andrea Principi",
+            "Maxwell Dahl",
+            "Max Tullett"
+          ],
+          "score": 17.01
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Leonardo Casati": {
+      "name": "Leonardo Casati",
+      "nationality": "IT",
+      "n_heats": 4,
+      "wins": 4,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "avg_score": 21.995,
+      "best_score": 23.77,
+      "stdev_score": 1.257,
+      "heats": [
+        {
+          "heat_no": 4,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Hugo Wigglesworth",
+            "Max Tullett"
+          ],
+          "score": 20.24
+        },
+        {
+          "heat_no": 14,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 1,
+          "opponents": [
+            "Josué San Ferreira",
+            "Finn Flügel",
+            "Maxwell Dahl"
+          ],
+          "score": 22.2
+        },
+        {
+          "heat_no": 17,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 1,
+          "opponents": [
+            "Shahar Tsabary",
+            "Hugo Wigglesworth",
+            "Jason van der Spuy"
+          ],
+          "score": 21.77
+        },
+        {
+          "heat_no": 19,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 1,
+          "opponents": [
+            "Lorenzo Casati",
+            "Shahar Tsabary",
+            "Jamie Overbeek"
+          ],
+          "score": 23.77
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Hugo Wigglesworth": {
+      "name": "Hugo Wigglesworth",
+      "nationality": "NZ",
+      "n_heats": 4,
+      "wins": 1,
+      "max_round_depth": 4,
+      "max_round": "Semi-Finals",
+      "avg_score": 18.418,
+      "best_score": 19.63,
+      "stdev_score": 0.98,
+      "heats": [
+        {
+          "heat_no": 4,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Leonardo Casati",
+            "Max Tullett"
+          ],
+          "score": 17.03
+        },
+        {
+          "heat_no": 10,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Yucel Paralik",
+            "Josh Gillitt",
+            "Jinne Boer"
+          ],
+          "score": 18.97
+        },
+        {
+          "heat_no": 16,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 2,
+          "opponents": [
+            "Jeremy Burlando",
+            "Parker Sage",
+            "Stijn Mul"
+          ],
+          "score": 18.04
+        },
+        {
+          "heat_no": 17,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 3,
+          "opponents": [
+            "Leonardo Casati",
+            "Shahar Tsabary",
+            "Jason van der Spuy"
+          ],
+          "score": 19.63
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Max Tullett": {
+      "name": "Max Tullett",
+      "nationality": "GB",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 14.405,
+      "best_score": 16.95,
+      "stdev_score": 2.545,
+      "heats": [
+        {
+          "heat_no": 4,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Leonardo Casati",
+            "Hugo Wigglesworth"
+          ],
+          "score": 11.86
+        },
+        {
+          "heat_no": 9,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Andrea Principi",
+            "Maxwell Dahl",
+            "Cohan van Dijk"
+          ],
+          "score": 16.95
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Zac Adams": {
+      "name": "Zac Adams",
+      "nationality": "US",
+      "n_heats": 2,
+      "wins": 1,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "avg_score": 14.57,
+      "best_score": 15.8,
+      "stdev_score": 1.23,
+      "heats": [
+        {
+          "heat_no": 5,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Giel Vlugt",
+            "Jason van der Spuy"
+          ],
+          "score": 15.8
+        },
+        {
+          "heat_no": 15,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 4,
+          "opponents": [
+            "Lorenzo Casati",
+            "Jason van der Spuy",
+            "Andrea Principi"
+          ],
+          "score": 13.34
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Giel Vlugt": {
+      "name": "Giel Vlugt",
+      "nationality": "NL",
+      "n_heats": 3,
+      "wins": 1,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "avg_score": 16.413,
+      "best_score": 17.6,
+      "stdev_score": 0.976,
+      "heats": [
+        {
+          "heat_no": 5,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Zac Adams",
+            "Jason van der Spuy"
+          ],
+          "score": 15.21
+        },
+        {
+          "heat_no": 11,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Parker Sage",
+            "Kimo Verkerk",
+            "Baptiste Bourdoulous"
+          ],
+          "score": 17.6
+        },
+        {
+          "heat_no": 13,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 3,
+          "opponents": [
+            "Shahar Tsabary",
+            "Jamie Overbeek",
+            "Yucel Paralik"
+          ],
+          "score": 16.43
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Jason van der Spuy": {
+      "name": "Jason van der Spuy",
+      "nationality": "ZA",
+      "n_heats": 4,
+      "wins": 0,
+      "max_round_depth": 4,
+      "max_round": "Semi-Finals",
+      "avg_score": 16.125,
+      "best_score": 18.73,
+      "stdev_score": 1.751,
+      "heats": [
+        {
+          "heat_no": 5,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Zac Adams",
+            "Giel Vlugt"
+          ],
+          "score": 13.8
+        },
+        {
+          "heat_no": 12,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Finn Flügel",
+            "Marten Koblischke",
+            "Luca Ceruti"
+          ],
+          "score": 15.87
+        },
+        {
+          "heat_no": 15,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 2,
+          "opponents": [
+            "Lorenzo Casati",
+            "Andrea Principi",
+            "Zac Adams"
+          ],
+          "score": 16.1
+        },
+        {
+          "heat_no": 17,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 4,
+          "opponents": [
+            "Leonardo Casati",
+            "Shahar Tsabary",
+            "Hugo Wigglesworth"
+          ],
+          "score": 18.73
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Lorenzo Casati": {
+      "name": "Lorenzo Casati",
+      "nationality": "ES",
+      "n_heats": 4,
+      "wins": 3,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "avg_score": 22.785,
+      "best_score": 23.31,
+      "stdev_score": 0.769,
+      "heats": [
+        {
+          "heat_no": 6,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Parker Sage",
+            "Luca Ceruti"
+          ],
+          "score": 21.46
+        },
+        {
+          "heat_no": 15,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 1,
+          "opponents": [
+            "Jason van der Spuy",
+            "Andrea Principi",
+            "Zac Adams"
+          ],
+          "score": 23.31
+        },
+        {
+          "heat_no": 18,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 1,
+          "opponents": [
+            "Jamie Overbeek",
+            "Josué San Ferreira",
+            "Jeremy Burlando"
+          ],
+          "score": 23.27
+        },
+        {
+          "heat_no": 19,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 2,
+          "opponents": [
+            "Leonardo Casati",
+            "Shahar Tsabary",
+            "Jamie Overbeek"
+          ],
+          "score": 23.1
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Parker Sage": {
+      "name": "Parker Sage",
+      "nationality": "US",
+      "n_heats": 3,
+      "wins": 0,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "avg_score": 16.723,
+      "best_score": 17.64,
+      "stdev_score": 0.676,
+      "heats": [
+        {
+          "heat_no": 6,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Lorenzo Casati",
+            "Luca Ceruti"
+          ],
+          "score": 17.64
+        },
+        {
+          "heat_no": 11,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Giel Vlugt",
+            "Kimo Verkerk",
+            "Baptiste Bourdoulous"
+          ],
+          "score": 16.03
+        },
+        {
+          "heat_no": 16,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 3,
+          "opponents": [
+            "Jeremy Burlando",
+            "Hugo Wigglesworth",
+            "Stijn Mul"
+          ],
+          "score": 16.5
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Luca Ceruti": {
+      "name": "Luca Ceruti",
+      "nationality": "ZA",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 14.7,
+      "best_score": 14.9,
+      "stdev_score": 0.2,
+      "heats": [
+        {
+          "heat_no": 6,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Lorenzo Casati",
+            "Parker Sage"
+          ],
+          "score": 14.9
+        },
+        {
+          "heat_no": 12,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Finn Flügel",
+            "Jason van der Spuy",
+            "Marten Koblischke"
+          ],
+          "score": 14.5
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Stijn Mul": {
+      "name": "Stijn Mul",
+      "nationality": "NL",
+      "n_heats": 2,
+      "wins": 1,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "avg_score": 16.17,
+      "best_score": 17.54,
+      "stdev_score": 1.37,
+      "heats": [
+        {
+          "heat_no": 7,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Marten Koblischke",
+            "Kimo Verkerk"
+          ],
+          "score": 17.54
+        },
+        {
+          "heat_no": 16,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 4,
+          "opponents": [
+            "Jeremy Burlando",
+            "Hugo Wigglesworth",
+            "Parker Sage"
+          ],
+          "score": 14.8
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Marten Koblischke": {
+      "name": "Marten Koblischke",
+      "nationality": "DE",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 15.215,
+      "best_score": 15.5,
+      "stdev_score": 0.285,
+      "heats": [
+        {
+          "heat_no": 7,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Stijn Mul",
+            "Kimo Verkerk"
+          ],
+          "score": 14.93
+        },
+        {
+          "heat_no": 12,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Finn Flügel",
+            "Jason van der Spuy",
+            "Luca Ceruti"
+          ],
+          "score": 15.5
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Kimo Verkerk": {
+      "name": "Kimo Verkerk",
+      "nationality": "NL",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 15.0,
+      "best_score": 15.37,
+      "stdev_score": 0.37,
+      "heats": [
+        {
+          "heat_no": 7,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Stijn Mul",
+            "Marten Koblischke"
+          ],
+          "score": 14.63
+        },
+        {
+          "heat_no": 11,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Giel Vlugt",
+            "Parker Sage",
+            "Baptiste Bourdoulous"
+          ],
+          "score": 15.37
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Jeremy Burlando": {
+      "name": "Jeremy Burlando",
+      "nationality": "ES",
+      "n_heats": 3,
+      "wins": 2,
+      "max_round_depth": 4,
+      "max_round": "Semi-Finals",
+      "avg_score": 18.71,
+      "best_score": 19.6,
+      "stdev_score": 0.632,
+      "heats": [
+        {
+          "heat_no": 8,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Finn Flügel",
+            "Baptiste Bourdoulous"
+          ],
+          "score": 19.6
+        },
+        {
+          "heat_no": 16,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 1,
+          "opponents": [
+            "Hugo Wigglesworth",
+            "Parker Sage",
+            "Stijn Mul"
+          ],
+          "score": 18.33
+        },
+        {
+          "heat_no": 18,
+          "round": "Semi-Finals",
+          "round_depth": 4,
+          "placement": 4,
+          "opponents": [
+            "Lorenzo Casati",
+            "Jamie Overbeek",
+            "Josué San Ferreira"
+          ],
+          "score": 18.2
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Finn Flügel": {
+      "name": "Finn Flügel",
+      "nationality": "DE",
+      "n_heats": 3,
+      "wins": 1,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "avg_score": 19.573,
+      "best_score": 20.97,
+      "stdev_score": 1.238,
+      "heats": [
+        {
+          "heat_no": 8,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Jeremy Burlando",
+            "Baptiste Bourdoulous"
+          ],
+          "score": 17.96
+        },
+        {
+          "heat_no": 12,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Jason van der Spuy",
+            "Marten Koblischke",
+            "Luca Ceruti"
+          ],
+          "score": 20.97
+        },
+        {
+          "heat_no": 14,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 3,
+          "opponents": [
+            "Leonardo Casati",
+            "Josué San Ferreira",
+            "Maxwell Dahl"
+          ],
+          "score": 19.79
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    },
+    "Baptiste Bourdoulous": {
+      "name": "Baptiste Bourdoulous",
+      "nationality": "GR",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "avg_score": 13.575,
+      "best_score": 14.09,
+      "stdev_score": 0.515,
+      "heats": [
+        {
+          "heat_no": 8,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Jeremy Burlando",
+            "Finn Flügel"
+          ],
+          "score": 14.09
+        },
+        {
+          "heat_no": 11,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Giel Vlugt",
+            "Parker Sage",
+            "Kimo Verkerk"
+          ],
+          "score": 13.06
+        }
+      ],
+      "avg_result": null,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "crash_rate": null
+    }
+  },
+  "field": {
+    "avg_score": 16.828,
+    "best_score": 18.295,
+    "n_athletes": 24
+  },
+  "winner": "Leonardo Casati",
+  "schema_note": "GKA ladder score only: single judge score per heat, no move/auto-imp/impression breakdown published by the source."
+}

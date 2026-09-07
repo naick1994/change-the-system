@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL. Black + orange, always-dark (no light/dark toggle). */
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 97%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 97%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 97%;
+
+    --primary: 24 95% 55%;
+    --primary-foreground: 0 0% 8%;
+
+    --secondary: 24 30% 18%;
+    --secondary-foreground: 0 0% 97%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 63%;
+
+    --accent: 24 95% 55%;
+    --accent-foreground: 0 0% 8%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 24 95% 55%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(24 95% 55%), hsl(12 85% 48%));
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.5);
+    --shadow-hover: 0 8px 30px -6px hsl(0 0% 0% / 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Chunky rounded display font for headlines only — same treatment as the
+   other Nicholas Baruffaldi sites, kept off body/UI text on purpose. */
+.font-display {
+  font-family: 'Baloo 2', sans-serif;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise-in {
+  animation: riseIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}

@@ -1,0 +1,3809 @@
+{
+  "heats": [
+    {
+      "heat_no": 1,
+      "round": "Round 1",
+      "round_depth": 1,
+      "participants": [
+        {
+          "name": "Jeremy Burlando",
+          "moves": [
+            5.82,
+            5.92,
+            2.3,
+            6.6,
+            0,
+            7.52,
+            0
+          ],
+          "result": 20.04,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.04,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.52,
+          "placement": 1
+        },
+        {
+          "name": "Shahar Tsabary",
+          "moves": [
+            6.28,
+            6.5,
+            5.5,
+            6.24,
+            6.64,
+            6.52,
+            3.4
+          ],
+          "result": 19.66,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.66,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 6.64,
+          "placement": 2
+        },
+        {
+          "name": "Josh Gillitt",
+          "moves": [
+            5.6,
+            6.06,
+            0,
+            5.8,
+            0,
+            5.18,
+            0
+          ],
+          "result": 17.46,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.46,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.06,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 2,
+      "round": "Round 1",
+      "round_depth": 1,
+      "participants": [
+        {
+          "name": "Leonardo Casati",
+          "moves": [
+            5.64,
+            0,
+            2.96,
+            5.22,
+            5.4,
+            6.18,
+            5.32
+          ],
+          "result": 17.22,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.22,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.18,
+          "placement": 1
+        },
+        {
+          "name": "Hugo Wigglesworth",
+          "moves": [
+            5.24,
+            5.58,
+            5.18,
+            2.68,
+            5.52,
+            5.32,
+            4.56
+          ],
+          "result": 16.42,
+          "auto_imp": null,
+          "impression": null,
+          "total": 16.42,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 5.58,
+          "placement": 2
+        },
+        {
+          "name": "Eliott Bouton",
+          "moves": [
+            2.92,
+            5.48,
+            3.52,
+            4.4,
+            0,
+            4.96,
+            1.98
+          ],
+          "result": 14.84,
+          "auto_imp": null,
+          "impression": null,
+          "total": 14.84,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 5.48,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 3,
+      "round": "Round 1",
+      "round_depth": 1,
+      "participants": [
+        {
+          "name": "Zac Adams",
+          "moves": [
+            5.4,
+            3.26,
+            5.48,
+            5.22,
+            6.16,
+            6.4,
+            0
+          ],
+          "result": 18.04,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.04,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.4,
+          "placement": 1
+        },
+        {
+          "name": "Clement Huot",
+          "moves": [
+            5.7,
+            5.02,
+            5.76,
+            4.76,
+            5.16,
+            1.94,
+            5.96
+          ],
+          "result": 16.88,
+          "auto_imp": null,
+          "impression": null,
+          "total": 16.88,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 5.96,
+          "placement": 2
+        },
+        {
+          "name": "Timo Boersema",
+          "moves": [
+            4.88,
+            5,
+            5.3,
+            2.42,
+            5.22,
+            4.44,
+            5.58
+          ],
+          "result": 16.1,
+          "auto_imp": null,
+          "impression": null,
+          "total": 16.1,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 5.58,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 4,
+      "round": "Round 1",
+      "round_depth": 1,
+      "participants": [
+        {
+          "name": "Marten Koblischke",
+          "moves": [
+            4.58,
+            5.7,
+            5.8,
+            5.4,
+            0,
+            6.05,
+            6.86
+          ],
+          "result": 18.71,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.71,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.86,
+          "placement": 1
+        },
+        {
+          "name": "Andrea Principi",
+          "moves": [
+            2.96,
+            5.78,
+            6.36,
+            4.04,
+            0,
+            5.96,
+            0
+          ],
+          "result": 18.1,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.1,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.36,
+          "placement": 2
+        },
+        {
+          "name": "Luca Ceruti",
+          "moves": [
+            5.7,
+            5.94,
+            5.9,
+            0,
+            0,
+            5.94,
+            6.1
+          ],
+          "result": 17.98,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.98,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.1,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 5,
+      "round": "Round 1",
+      "round_depth": 1,
+      "participants": [
+        {
+          "name": "Jamie Overbeek",
+          "moves": [
+            6.96,
+            6.28,
+            4.9,
+            5.58,
+            6.1,
+            6.08,
+            6.88
+          ],
+          "result": 20.12,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.12,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 6.96,
+          "placement": 1
+        },
+        {
+          "name": "Kimo Verkerk",
+          "moves": [
+            4.68,
+            6.02,
+            0.84,
+            4.24,
+            0,
+            0,
+            0
+          ],
+          "result": 14.94,
+          "auto_imp": null,
+          "impression": null,
+          "total": 14.94,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.02,
+          "placement": 2
+        },
+        {
+          "name": "Jason van der Spuy",
+          "moves": [
+            5.06,
+            4.34,
+            5.36,
+            0,
+            0,
+            0,
+            3.9
+          ],
+          "result": 14.76,
+          "auto_imp": null,
+          "impression": null,
+          "total": 14.76,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 5.36,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 6,
+      "round": "Round 1",
+      "round_depth": 1,
+      "participants": [
+        {
+          "name": "Finn Flügel",
+          "moves": [
+            6.4,
+            5.76,
+            5.1,
+            7.34,
+            7.24,
+            0,
+            0
+          ],
+          "result": 20.98,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.98,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.34,
+          "placement": 1
+        },
+        {
+          "name": "Nathan Texier",
+          "moves": [
+            6.02,
+            5.4,
+            5.18,
+            5.9,
+            6.62,
+            5.04,
+            0
+          ],
+          "result": 18.54,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.54,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.62,
+          "placement": 2
+        },
+        {
+          "name": "Giel Vlugt",
+          "moves": [
+            5.46,
+            5.18,
+            0,
+            4.74,
+            4.74,
+            0,
+            0
+          ],
+          "result": 15.38,
+          "auto_imp": null,
+          "impression": null,
+          "total": 15.38,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 5.46,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 7,
+      "round": "Round 1",
+      "round_depth": 1,
+      "participants": [
+        {
+          "name": "Josué San Ferreira",
+          "moves": [
+            4.7,
+            3,
+            5.88,
+            6.24,
+            0,
+            2.84,
+            4.9
+          ],
+          "result": 17.02,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.02,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.24,
+          "placement": 1
+        },
+        {
+          "name": "Baptiste Jacquemain",
+          "moves": [
+            5.98,
+            4.42,
+            0,
+            0,
+            5.44,
+            4.12,
+            0
+          ],
+          "result": 15.84,
+          "auto_imp": null,
+          "impression": null,
+          "total": 15.84,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 5.98,
+          "placement": 2
+        },
+        {
+          "name": "Stijn Mul",
+          "moves": [
+            5.12,
+            4.58,
+            0,
+            2.9,
+            3.56,
+            4.32,
+            3.54
+          ],
+          "result": 14.02,
+          "auto_imp": null,
+          "impression": null,
+          "total": 14.02,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 5.12,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 8,
+      "round": "Round 1",
+      "round_depth": 1,
+      "participants": [
+        {
+          "name": "Lorenzo Casati",
+          "moves": [
+            5.02,
+            6.22,
+            5.96,
+            6.6,
+            6.3,
+            6.5,
+            6.9
+          ],
+          "result": 20.0,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.0,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 6.9,
+          "placement": 1
+        },
+        {
+          "name": "Cohan van Dijk",
+          "moves": [
+            5.52,
+            5.58,
+            5.42,
+            7.02,
+            0,
+            5.28,
+            7.12
+          ],
+          "result": 19.72,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.72,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.12,
+          "placement": 2
+        },
+        {
+          "name": "Maxwell Dahl",
+          "moves": [
+            4.16,
+            4.26,
+            0,
+            6.6,
+            5.98,
+            5.92,
+            0
+          ],
+          "result": 18.5,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.5,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.6,
+          "placement": 3
+        }
+      ]
+    },
+    {
+      "heat_no": 9,
+      "round": "Round 2",
+      "round_depth": 2,
+      "participants": [
+        {
+          "name": "Shahar Tsabary",
+          "moves": [
+            4.98,
+            6.58,
+            1,
+            0,
+            4.6,
+            5.78,
+            6.38
+          ],
+          "result": 18.74,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.74,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.58,
+          "placement": 1
+        },
+        {
+          "name": "Luca Ceruti",
+          "moves": [
+            3.52,
+            6.18,
+            4.82,
+            0,
+            5.82,
+            6.36,
+            0
+          ],
+          "result": 18.36,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.36,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.36,
+          "placement": 2
+        },
+        {
+          "name": "Timo Boersema",
+          "moves": [
+            0,
+            5.38,
+            5.68,
+            5.9,
+            0,
+            5,
+            6.44
+          ],
+          "result": 18.02,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.02,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.44,
+          "placement": 3
+        },
+        {
+          "name": "Hugo Wigglesworth",
+          "moves": [
+            5.58,
+            6.56,
+            4.78,
+            5.5,
+            5.5,
+            5.32,
+            5.62
+          ],
+          "result": 17.76,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.76,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 6.56,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 10,
+      "round": "Round 2",
+      "round_depth": 2,
+      "participants": [
+        {
+          "name": "Andrea Principi",
+          "moves": [
+            7.42,
+            0,
+            0,
+            0,
+            6.54,
+            0,
+            6.2
+          ],
+          "result": 20.16,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.16,
+          "crashes": 4,
+          "attempts": 7,
+          "best_move": 7.42,
+          "placement": 1
+        },
+        {
+          "name": "Eliott Bouton",
+          "moves": [
+            4.4,
+            5.82,
+            5.04,
+            6.1,
+            6.58,
+            6.7,
+            0
+          ],
+          "result": 19.38,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.38,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.7,
+          "placement": 2
+        },
+        {
+          "name": "Josh Gillitt",
+          "moves": [
+            6.06,
+            0,
+            4.6,
+            5.66,
+            0,
+            0,
+            6
+          ],
+          "result": 17.72,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.72,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.06,
+          "placement": 3
+        },
+        {
+          "name": "Clement Huot",
+          "moves": [
+            5.02,
+            3.74,
+            0,
+            0,
+            0,
+            0,
+            6.56
+          ],
+          "result": 15.32,
+          "auto_imp": null,
+          "impression": null,
+          "total": 15.32,
+          "crashes": 4,
+          "attempts": 7,
+          "best_move": 6.56,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 11,
+      "round": "Round 2",
+      "round_depth": 2,
+      "participants": [
+        {
+          "name": "Nathan Texier",
+          "moves": [
+            6.04,
+            6.8,
+            6.32,
+            5.52,
+            0,
+            6.46,
+            0
+          ],
+          "result": 19.58,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.58,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.8,
+          "placement": 1
+        },
+        {
+          "name": "Maxwell Dahl",
+          "moves": [
+            0,
+            5.42,
+            6.14,
+            0,
+            6.38,
+            6.78,
+            0
+          ],
+          "result": 19.3,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.3,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.78,
+          "placement": 2
+        },
+        {
+          "name": "Stijn Mul",
+          "moves": [
+            5.84,
+            5.4,
+            5.66,
+            5.92,
+            5.7,
+            0,
+            6.38
+          ],
+          "result": 18.14,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.14,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.38,
+          "placement": 3
+        },
+        {
+          "name": "Kimo Verkerk",
+          "moves": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "result": 0.0,
+          "auto_imp": null,
+          "impression": null,
+          "total": 0.0,
+          "crashes": 7,
+          "attempts": 7,
+          "best_move": 0,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 12,
+      "round": "Round 2",
+      "round_depth": 2,
+      "participants": [
+        {
+          "name": "Cohan van Dijk",
+          "moves": [
+            3.72,
+            0,
+            6.53,
+            4.48,
+            4.83,
+            6.06,
+            6.46
+          ],
+          "result": 19.05,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.05,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.53,
+          "placement": 1
+        },
+        {
+          "name": "Baptiste Jacquemain",
+          "moves": [
+            3.78,
+            0,
+            5.4,
+            5.94,
+            6.36,
+            0,
+            0
+          ],
+          "result": 17.7,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.7,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.36,
+          "placement": 2
+        },
+        {
+          "name": "Jason van der Spuy",
+          "moves": [
+            5.92,
+            3.54,
+            5.48,
+            5.14,
+            6.02,
+            5.98,
+            0
+          ],
+          "result": 17.14,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.14,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.02,
+          "placement": 3
+        },
+        {
+          "name": "Giel Vlugt",
+          "moves": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "result": 0.0,
+          "auto_imp": null,
+          "impression": null,
+          "total": 0.0,
+          "crashes": 7,
+          "attempts": 7,
+          "best_move": 0,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 13,
+      "round": "Round 3",
+      "round_depth": 3,
+      "participants": [
+        {
+          "name": "Jeremy Burlando",
+          "moves": [
+            7.24,
+            7.9,
+            6.98,
+            0,
+            7.14,
+            0,
+            5.82
+          ],
+          "result": 22.28,
+          "auto_imp": null,
+          "impression": null,
+          "total": 22.28,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.9,
+          "placement": 1
+        },
+        {
+          "name": "Leonardo Casati",
+          "moves": [
+            6.64,
+            6.58,
+            6.88,
+            7,
+            7.16,
+            7.08,
+            7.54
+          ],
+          "result": 21.78,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.78,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 7.54,
+          "placement": 2
+        },
+        {
+          "name": "Nathan Texier",
+          "moves": [
+            7.04,
+            6.6,
+            6.6,
+            5.4,
+            0,
+            0,
+            7.26
+          ],
+          "result": 20.9,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.9,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.26,
+          "placement": 3
+        },
+        {
+          "name": "Eliott Bouton",
+          "moves": [
+            4.92,
+            6.34,
+            0,
+            6.84,
+            6.14,
+            0,
+            6.62
+          ],
+          "result": 19.6,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.6,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.84,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 14,
+      "round": "Round 3",
+      "round_depth": 3,
+      "participants": [
+        {
+          "name": "Zac Adams",
+          "moves": [
+            6.38,
+            6.42,
+            5.58,
+            7.1,
+            6.34,
+            5.92,
+            0
+          ],
+          "result": 19.9,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.9,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.1,
+          "placement": 1
+        },
+        {
+          "name": "Cohan van Dijk",
+          "moves": [
+            7.2,
+            6.1,
+            6.34,
+            6.28,
+            0,
+            4.78,
+            0
+          ],
+          "result": 19.82,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.82,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.2,
+          "placement": 2
+        },
+        {
+          "name": "Marten Koblischke",
+          "moves": [
+            6.5,
+            6.02,
+            6,
+            6.66,
+            0,
+            6.48,
+            0
+          ],
+          "result": 19.16,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.16,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.66,
+          "placement": 3
+        },
+        {
+          "name": "Luca Ceruti",
+          "moves": [
+            5.63,
+            5.96,
+            0,
+            0,
+            0,
+            0,
+            5.78
+          ],
+          "result": 17.37,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.37,
+          "crashes": 4,
+          "attempts": 7,
+          "best_move": 5.96,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 15,
+      "round": "Round 3",
+      "round_depth": 3,
+      "participants": [
+        {
+          "name": "Jamie Overbeek",
+          "moves": [
+            6.24,
+            7.24,
+            0,
+            6.18,
+            6.26,
+            7.2,
+            7.16
+          ],
+          "result": 21.6,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.6,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.24,
+          "placement": 1
+        },
+        {
+          "name": "Finn Flügel",
+          "moves": [
+            5.7,
+            0,
+            6.76,
+            7.4,
+            6.96,
+            7.16,
+            0
+          ],
+          "result": 21.52,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.52,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.4,
+          "placement": 2
+        },
+        {
+          "name": "Shahar Tsabary",
+          "moves": [
+            0,
+            6.14,
+            6.34,
+            0,
+            6.34,
+            0,
+            0
+          ],
+          "result": 18.82,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.82,
+          "crashes": 4,
+          "attempts": 7,
+          "best_move": 6.34,
+          "placement": 3
+        },
+        {
+          "name": "Baptiste Jacquemain",
+          "moves": [
+            6.1,
+            1.84,
+            5.66,
+            0,
+            5.88,
+            0.78,
+            0
+          ],
+          "result": 17.64,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.64,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.1,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 16,
+      "round": "Round 3",
+      "round_depth": 3,
+      "participants": [
+        {
+          "name": "Andrea Principi",
+          "moves": [
+            0,
+            6.28,
+            7.24,
+            6.78,
+            7.78,
+            0,
+            8.22
+          ],
+          "result": 23.24,
+          "auto_imp": null,
+          "impression": null,
+          "total": 23.24,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 8.22,
+          "placement": 1
+        },
+        {
+          "name": "Josué San Ferreira",
+          "moves": [
+            6.1,
+            6.8,
+            5.24,
+            1.32,
+            7.46,
+            6.74,
+            7.8,
+            0
+          ],
+          "result": 22.06,
+          "auto_imp": null,
+          "impression": null,
+          "total": 22.06,
+          "crashes": 1,
+          "attempts": 8,
+          "best_move": 7.8,
+          "placement": 2
+        },
+        {
+          "name": "Lorenzo Casati",
+          "moves": [
+            6.54,
+            6.98,
+            7.02,
+            6.72,
+            7.62,
+            6.8,
+            6.52,
+            5.76
+          ],
+          "result": 21.62,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.62,
+          "crashes": 0,
+          "attempts": 8,
+          "best_move": 7.62,
+          "placement": 3
+        },
+        {
+          "name": "Maxwell Dahl",
+          "moves": [
+            6,
+            7.2,
+            7.06,
+            0,
+            3.7,
+            4.84,
+            6.42,
+            0
+          ],
+          "result": 20.68,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.68,
+          "crashes": 2,
+          "attempts": 8,
+          "best_move": 7.2,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 17,
+      "round": "Semi Finals",
+      "round_depth": 4,
+      "participants": [
+        {
+          "name": "Zac Adams",
+          "moves": [
+            8.17,
+            6.13,
+            6.33,
+            8.07,
+            8.93,
+            0,
+            8.7
+          ],
+          "result": 25.8,
+          "auto_imp": null,
+          "impression": null,
+          "total": 25.8,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 8.93,
+          "placement": 1
+        },
+        {
+          "name": "Finn Flügel",
+          "moves": [
+            5.37,
+            0,
+            5.8,
+            0,
+            8.63,
+            5.97,
+            0
+          ],
+          "result": 20.4,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.4,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 8.63,
+          "placement": 2
+        },
+        {
+          "name": "Jeremy Burlando",
+          "moves": [
+            6.4,
+            6.83,
+            6.07,
+            6.33,
+            7,
+            6.33,
+            6.53
+          ],
+          "result": 20.37,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.37,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 7,
+          "placement": 3
+        },
+        {
+          "name": "Josué San Ferreira",
+          "moves": [
+            6.33,
+            5.33,
+            7.37,
+            0.93,
+            6.13,
+            0,
+            0
+          ],
+          "result": 19.83,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.83,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.37,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 18,
+      "round": "Semi Finals",
+      "round_depth": 4,
+      "participants": [
+        {
+          "name": "Jamie Overbeek",
+          "moves": [
+            6.9,
+            0,
+            7.13,
+            6.93,
+            7.77,
+            6.8,
+            7.2
+          ],
+          "result": 22.1,
+          "auto_imp": null,
+          "impression": null,
+          "total": 22.1,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.77,
+          "placement": 1
+        },
+        {
+          "name": "Leonardo Casati",
+          "moves": [
+            6.27,
+            7.37,
+            7.5,
+            0,
+            0,
+            4.13,
+            2
+          ],
+          "result": 21.13,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.13,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.5,
+          "placement": 2
+        },
+        {
+          "name": "Cohan van Dijk",
+          "moves": [
+            6.2,
+            0,
+            6.67,
+            5.27,
+            4.77,
+            7.4,
+            3.27
+          ],
+          "result": 19.33,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.33,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.4,
+          "placement": 3
+        },
+        {
+          "name": "Andrea Principi",
+          "moves": [
+            3.4,
+            6.73,
+            0,
+            6.57,
+            0,
+            3.93,
+            5.87
+          ],
+          "result": 19.17,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.17,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.73,
+          "placement": 4
+        }
+      ]
+    },
+    {
+      "heat_no": 19,
+      "round": "Final",
+      "round_depth": 5,
+      "participants": [
+        {
+          "name": "Jamie Overbeek",
+          "moves": [
+            7.63,
+            7.23,
+            7.63,
+            9.5,
+            8.97,
+            9.33,
+            10
+          ],
+          "result": 28.83,
+          "auto_imp": null,
+          "impression": null,
+          "total": 28.83,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 10,
+          "placement": 1
+        },
+        {
+          "name": "Finn Flügel",
+          "moves": [
+            0,
+            0,
+            5.5,
+            7.57,
+            7.73,
+            7.57,
+            9.23
+          ],
+          "result": 24.53,
+          "auto_imp": null,
+          "impression": null,
+          "total": 24.53,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 9.23,
+          "placement": 2
+        },
+        {
+          "name": "Leonardo Casati",
+          "moves": [
+            6.83,
+            7.17,
+            7.63,
+            6.9,
+            7.23,
+            7.6,
+            0
+          ],
+          "result": 22.47,
+          "auto_imp": null,
+          "impression": null,
+          "total": 22.47,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.63,
+          "placement": 3
+        },
+        {
+          "name": "Zac Adams",
+          "moves": [
+            1.3,
+            7.4,
+            7.33,
+            6.8,
+            7.2,
+            0,
+            0
+          ],
+          "result": 21.93,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.93,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.4,
+          "placement": 4
+        }
+      ]
+    }
+  ],
+  "profiles": {
+    "Jeremy Burlando": {
+      "name": "Jeremy Burlando",
+      "nationality": "ES",
+      "n_heats": 3,
+      "wins": 2,
+      "max_round_depth": 4,
+      "max_round": "Semi Finals",
+      "total_attempts": 21,
+      "total_crashes": 4,
+      "crash_rate": 0.1905,
+      "avg_result": 20.897,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 20.897,
+      "best_total": 22.28,
+      "best_move": 7.9,
+      "stdev_total": 0.987,
+      "heats": [
+        {
+          "heat_no": 1,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Shahar Tsabary",
+            "Josh Gillitt"
+          ],
+          "moves": [
+            5.82,
+            5.92,
+            2.3,
+            6.6,
+            0,
+            7.52,
+            0
+          ],
+          "result": 20.04,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.04,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.52
+        },
+        {
+          "heat_no": 13,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 1,
+          "opponents": [
+            "Leonardo Casati",
+            "Nathan Texier",
+            "Eliott Bouton"
+          ],
+          "moves": [
+            7.24,
+            7.9,
+            6.98,
+            0,
+            7.14,
+            0,
+            5.82
+          ],
+          "result": 22.28,
+          "auto_imp": null,
+          "impression": null,
+          "total": 22.28,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.9
+        },
+        {
+          "heat_no": 17,
+          "round": "Semi Finals",
+          "round_depth": 4,
+          "placement": 3,
+          "opponents": [
+            "Zac Adams",
+            "Finn Flügel",
+            "Josué San Ferreira"
+          ],
+          "moves": [
+            6.4,
+            6.83,
+            6.07,
+            6.33,
+            7,
+            6.33,
+            6.53
+          ],
+          "result": 20.37,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.37,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 7
+        }
+      ]
+    },
+    "Shahar Tsabary": {
+      "name": "Shahar Tsabary",
+      "nationality": "IL",
+      "n_heats": 3,
+      "wins": 1,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "total_attempts": 21,
+      "total_crashes": 5,
+      "crash_rate": 0.2381,
+      "avg_result": 19.073,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 19.073,
+      "best_total": 19.66,
+      "best_move": 6.64,
+      "stdev_total": 0.416,
+      "heats": [
+        {
+          "heat_no": 1,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Jeremy Burlando",
+            "Josh Gillitt"
+          ],
+          "moves": [
+            6.28,
+            6.5,
+            5.5,
+            6.24,
+            6.64,
+            6.52,
+            3.4
+          ],
+          "result": 19.66,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.66,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 6.64
+        },
+        {
+          "heat_no": 9,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Luca Ceruti",
+            "Timo Boersema",
+            "Hugo Wigglesworth"
+          ],
+          "moves": [
+            4.98,
+            6.58,
+            1,
+            0,
+            4.6,
+            5.78,
+            6.38
+          ],
+          "result": 18.74,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.74,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.58
+        },
+        {
+          "heat_no": 15,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 3,
+          "opponents": [
+            "Jamie Overbeek",
+            "Finn Flügel",
+            "Baptiste Jacquemain"
+          ],
+          "moves": [
+            0,
+            6.14,
+            6.34,
+            0,
+            6.34,
+            0,
+            0
+          ],
+          "result": 18.82,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.82,
+          "crashes": 4,
+          "attempts": 7,
+          "best_move": 6.34
+        }
+      ]
+    },
+    "Josh Gillitt": {
+      "name": "Josh Gillitt",
+      "nationality": "ZA",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "total_attempts": 14,
+      "total_crashes": 6,
+      "crash_rate": 0.4286,
+      "avg_result": 17.59,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 17.59,
+      "best_total": 17.72,
+      "best_move": 6.06,
+      "stdev_total": 0.13,
+      "heats": [
+        {
+          "heat_no": 1,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Jeremy Burlando",
+            "Shahar Tsabary"
+          ],
+          "moves": [
+            5.6,
+            6.06,
+            0,
+            5.8,
+            0,
+            5.18,
+            0
+          ],
+          "result": 17.46,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.46,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.06
+        },
+        {
+          "heat_no": 10,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Andrea Principi",
+            "Eliott Bouton",
+            "Clement Huot"
+          ],
+          "moves": [
+            6.06,
+            0,
+            4.6,
+            5.66,
+            0,
+            0,
+            6
+          ],
+          "result": 17.72,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.72,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.06
+        }
+      ]
+    },
+    "Leonardo Casati": {
+      "name": "Leonardo Casati",
+      "nationality": "IT",
+      "n_heats": 4,
+      "wins": 1,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "total_attempts": 28,
+      "total_crashes": 4,
+      "crash_rate": 0.1429,
+      "avg_result": 20.65,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 20.65,
+      "best_total": 22.47,
+      "best_move": 7.63,
+      "stdev_total": 2.036,
+      "heats": [
+        {
+          "heat_no": 2,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Hugo Wigglesworth",
+            "Eliott Bouton"
+          ],
+          "moves": [
+            5.64,
+            0,
+            2.96,
+            5.22,
+            5.4,
+            6.18,
+            5.32
+          ],
+          "result": 17.22,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.22,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.18
+        },
+        {
+          "heat_no": 13,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 2,
+          "opponents": [
+            "Jeremy Burlando",
+            "Nathan Texier",
+            "Eliott Bouton"
+          ],
+          "moves": [
+            6.64,
+            6.58,
+            6.88,
+            7,
+            7.16,
+            7.08,
+            7.54
+          ],
+          "result": 21.78,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.78,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 7.54
+        },
+        {
+          "heat_no": 18,
+          "round": "Semi Finals",
+          "round_depth": 4,
+          "placement": 2,
+          "opponents": [
+            "Jamie Overbeek",
+            "Cohan van Dijk",
+            "Andrea Principi"
+          ],
+          "moves": [
+            6.27,
+            7.37,
+            7.5,
+            0,
+            0,
+            4.13,
+            2
+          ],
+          "result": 21.13,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.13,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.5
+        },
+        {
+          "heat_no": 19,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 3,
+          "opponents": [
+            "Jamie Overbeek",
+            "Finn Flügel",
+            "Zac Adams"
+          ],
+          "moves": [
+            6.83,
+            7.17,
+            7.63,
+            6.9,
+            7.23,
+            7.6,
+            0
+          ],
+          "result": 22.47,
+          "auto_imp": null,
+          "impression": null,
+          "total": 22.47,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.63
+        }
+      ]
+    },
+    "Hugo Wigglesworth": {
+      "name": "Hugo Wigglesworth",
+      "nationality": "NZ",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "total_attempts": 14,
+      "total_crashes": 0,
+      "crash_rate": 0.0,
+      "avg_result": 17.09,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 17.09,
+      "best_total": 17.76,
+      "best_move": 6.56,
+      "stdev_total": 0.67,
+      "heats": [
+        {
+          "heat_no": 2,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Leonardo Casati",
+            "Eliott Bouton"
+          ],
+          "moves": [
+            5.24,
+            5.58,
+            5.18,
+            2.68,
+            5.52,
+            5.32,
+            4.56
+          ],
+          "result": 16.42,
+          "auto_imp": null,
+          "impression": null,
+          "total": 16.42,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 5.58
+        },
+        {
+          "heat_no": 9,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Shahar Tsabary",
+            "Luca Ceruti",
+            "Timo Boersema"
+          ],
+          "moves": [
+            5.58,
+            6.56,
+            4.78,
+            5.5,
+            5.5,
+            5.32,
+            5.62
+          ],
+          "result": 17.76,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.76,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 6.56
+        }
+      ]
+    },
+    "Eliott Bouton": {
+      "name": "Eliott Bouton",
+      "nationality": "FR",
+      "n_heats": 3,
+      "wins": 0,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "total_attempts": 21,
+      "total_crashes": 4,
+      "crash_rate": 0.1905,
+      "avg_result": 17.94,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 17.94,
+      "best_total": 19.6,
+      "best_move": 6.84,
+      "stdev_total": 2.194,
+      "heats": [
+        {
+          "heat_no": 2,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Leonardo Casati",
+            "Hugo Wigglesworth"
+          ],
+          "moves": [
+            2.92,
+            5.48,
+            3.52,
+            4.4,
+            0,
+            4.96,
+            1.98
+          ],
+          "result": 14.84,
+          "auto_imp": null,
+          "impression": null,
+          "total": 14.84,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 5.48
+        },
+        {
+          "heat_no": 10,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Andrea Principi",
+            "Josh Gillitt",
+            "Clement Huot"
+          ],
+          "moves": [
+            4.4,
+            5.82,
+            5.04,
+            6.1,
+            6.58,
+            6.7,
+            0
+          ],
+          "result": 19.38,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.38,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.7
+        },
+        {
+          "heat_no": 13,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 4,
+          "opponents": [
+            "Jeremy Burlando",
+            "Leonardo Casati",
+            "Nathan Texier"
+          ],
+          "moves": [
+            4.92,
+            6.34,
+            0,
+            6.84,
+            6.14,
+            0,
+            6.62
+          ],
+          "result": 19.6,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.6,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.84
+        }
+      ]
+    },
+    "Zac Adams": {
+      "name": "Zac Adams",
+      "nationality": "US",
+      "n_heats": 4,
+      "wins": 3,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "total_attempts": 28,
+      "total_crashes": 5,
+      "crash_rate": 0.1786,
+      "avg_result": 21.418,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 21.418,
+      "best_total": 25.8,
+      "best_move": 8.93,
+      "stdev_total": 2.88,
+      "heats": [
+        {
+          "heat_no": 3,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Clement Huot",
+            "Timo Boersema"
+          ],
+          "moves": [
+            5.4,
+            3.26,
+            5.48,
+            5.22,
+            6.16,
+            6.4,
+            0
+          ],
+          "result": 18.04,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.04,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.4
+        },
+        {
+          "heat_no": 14,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 1,
+          "opponents": [
+            "Cohan van Dijk",
+            "Marten Koblischke",
+            "Luca Ceruti"
+          ],
+          "moves": [
+            6.38,
+            6.42,
+            5.58,
+            7.1,
+            6.34,
+            5.92,
+            0
+          ],
+          "result": 19.9,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.9,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.1
+        },
+        {
+          "heat_no": 17,
+          "round": "Semi Finals",
+          "round_depth": 4,
+          "placement": 1,
+          "opponents": [
+            "Finn Flügel",
+            "Jeremy Burlando",
+            "Josué San Ferreira"
+          ],
+          "moves": [
+            8.17,
+            6.13,
+            6.33,
+            8.07,
+            8.93,
+            0,
+            8.7
+          ],
+          "result": 25.8,
+          "auto_imp": null,
+          "impression": null,
+          "total": 25.8,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 8.93
+        },
+        {
+          "heat_no": 19,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 4,
+          "opponents": [
+            "Jamie Overbeek",
+            "Finn Flügel",
+            "Leonardo Casati"
+          ],
+          "moves": [
+            1.3,
+            7.4,
+            7.33,
+            6.8,
+            7.2,
+            0,
+            0
+          ],
+          "result": 21.93,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.93,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.4
+        }
+      ]
+    },
+    "Clement Huot": {
+      "name": "Clement Huot",
+      "nationality": "FR",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "total_attempts": 14,
+      "total_crashes": 4,
+      "crash_rate": 0.2857,
+      "avg_result": 16.1,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 16.1,
+      "best_total": 16.88,
+      "best_move": 6.56,
+      "stdev_total": 0.78,
+      "heats": [
+        {
+          "heat_no": 3,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Zac Adams",
+            "Timo Boersema"
+          ],
+          "moves": [
+            5.7,
+            5.02,
+            5.76,
+            4.76,
+            5.16,
+            1.94,
+            5.96
+          ],
+          "result": 16.88,
+          "auto_imp": null,
+          "impression": null,
+          "total": 16.88,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 5.96
+        },
+        {
+          "heat_no": 10,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Andrea Principi",
+            "Eliott Bouton",
+            "Josh Gillitt"
+          ],
+          "moves": [
+            5.02,
+            3.74,
+            0,
+            0,
+            0,
+            0,
+            6.56
+          ],
+          "result": 15.32,
+          "auto_imp": null,
+          "impression": null,
+          "total": 15.32,
+          "crashes": 4,
+          "attempts": 7,
+          "best_move": 6.56
+        }
+      ]
+    },
+    "Timo Boersema": {
+      "name": "Timo Boersema",
+      "nationality": "NL",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "total_attempts": 14,
+      "total_crashes": 2,
+      "crash_rate": 0.1429,
+      "avg_result": 17.06,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 17.06,
+      "best_total": 18.02,
+      "best_move": 6.44,
+      "stdev_total": 0.96,
+      "heats": [
+        {
+          "heat_no": 3,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Zac Adams",
+            "Clement Huot"
+          ],
+          "moves": [
+            4.88,
+            5,
+            5.3,
+            2.42,
+            5.22,
+            4.44,
+            5.58
+          ],
+          "result": 16.1,
+          "auto_imp": null,
+          "impression": null,
+          "total": 16.1,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 5.58
+        },
+        {
+          "heat_no": 9,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Shahar Tsabary",
+            "Luca Ceruti",
+            "Hugo Wigglesworth"
+          ],
+          "moves": [
+            0,
+            5.38,
+            5.68,
+            5.9,
+            0,
+            5,
+            6.44
+          ],
+          "result": 18.02,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.02,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.44
+        }
+      ]
+    },
+    "Marten Koblischke": {
+      "name": "Marten Koblischke",
+      "nationality": "DE",
+      "n_heats": 2,
+      "wins": 1,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "total_attempts": 14,
+      "total_crashes": 3,
+      "crash_rate": 0.2143,
+      "avg_result": 18.935,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 18.935,
+      "best_total": 19.16,
+      "best_move": 6.86,
+      "stdev_total": 0.225,
+      "heats": [
+        {
+          "heat_no": 4,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Andrea Principi",
+            "Luca Ceruti"
+          ],
+          "moves": [
+            4.58,
+            5.7,
+            5.8,
+            5.4,
+            0,
+            6.05,
+            6.86
+          ],
+          "result": 18.71,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.71,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.86
+        },
+        {
+          "heat_no": 14,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 3,
+          "opponents": [
+            "Zac Adams",
+            "Cohan van Dijk",
+            "Luca Ceruti"
+          ],
+          "moves": [
+            6.5,
+            6.02,
+            6,
+            6.66,
+            0,
+            6.48,
+            0
+          ],
+          "result": 19.16,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.16,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.66
+        }
+      ]
+    },
+    "Andrea Principi": {
+      "name": "Andrea Principi",
+      "nationality": "IT",
+      "n_heats": 4,
+      "wins": 2,
+      "max_round_depth": 4,
+      "max_round": "Semi Finals",
+      "total_attempts": 28,
+      "total_crashes": 10,
+      "crash_rate": 0.3571,
+      "avg_result": 20.168,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 20.168,
+      "best_total": 23.24,
+      "best_move": 8.22,
+      "stdev_total": 1.918,
+      "heats": [
+        {
+          "heat_no": 4,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Marten Koblischke",
+            "Luca Ceruti"
+          ],
+          "moves": [
+            2.96,
+            5.78,
+            6.36,
+            4.04,
+            0,
+            5.96,
+            0
+          ],
+          "result": 18.1,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.1,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.36
+        },
+        {
+          "heat_no": 10,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Eliott Bouton",
+            "Josh Gillitt",
+            "Clement Huot"
+          ],
+          "moves": [
+            7.42,
+            0,
+            0,
+            0,
+            6.54,
+            0,
+            6.2
+          ],
+          "result": 20.16,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.16,
+          "crashes": 4,
+          "attempts": 7,
+          "best_move": 7.42
+        },
+        {
+          "heat_no": 16,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 1,
+          "opponents": [
+            "Josué San Ferreira",
+            "Lorenzo Casati",
+            "Maxwell Dahl"
+          ],
+          "moves": [
+            0,
+            6.28,
+            7.24,
+            6.78,
+            7.78,
+            0,
+            8.22
+          ],
+          "result": 23.24,
+          "auto_imp": null,
+          "impression": null,
+          "total": 23.24,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 8.22
+        },
+        {
+          "heat_no": 18,
+          "round": "Semi Finals",
+          "round_depth": 4,
+          "placement": 4,
+          "opponents": [
+            "Jamie Overbeek",
+            "Leonardo Casati",
+            "Cohan van Dijk"
+          ],
+          "moves": [
+            3.4,
+            6.73,
+            0,
+            6.57,
+            0,
+            3.93,
+            5.87
+          ],
+          "result": 19.17,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.17,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.73
+        }
+      ]
+    },
+    "Luca Ceruti": {
+      "name": "Luca Ceruti",
+      "nationality": "ZA",
+      "n_heats": 3,
+      "wins": 0,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "total_attempts": 21,
+      "total_crashes": 8,
+      "crash_rate": 0.381,
+      "avg_result": 17.903,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 17.903,
+      "best_total": 18.36,
+      "best_move": 6.36,
+      "stdev_total": 0.408,
+      "heats": [
+        {
+          "heat_no": 4,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Marten Koblischke",
+            "Andrea Principi"
+          ],
+          "moves": [
+            5.7,
+            5.94,
+            5.9,
+            0,
+            0,
+            5.94,
+            6.1
+          ],
+          "result": 17.98,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.98,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.1
+        },
+        {
+          "heat_no": 9,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Shahar Tsabary",
+            "Timo Boersema",
+            "Hugo Wigglesworth"
+          ],
+          "moves": [
+            3.52,
+            6.18,
+            4.82,
+            0,
+            5.82,
+            6.36,
+            0
+          ],
+          "result": 18.36,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.36,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.36
+        },
+        {
+          "heat_no": 14,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 4,
+          "opponents": [
+            "Zac Adams",
+            "Cohan van Dijk",
+            "Marten Koblischke"
+          ],
+          "moves": [
+            5.63,
+            5.96,
+            0,
+            0,
+            0,
+            0,
+            5.78
+          ],
+          "result": 17.37,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.37,
+          "crashes": 4,
+          "attempts": 7,
+          "best_move": 5.96
+        }
+      ]
+    },
+    "Jamie Overbeek": {
+      "name": "Jamie Overbeek",
+      "nationality": "NL",
+      "n_heats": 4,
+      "wins": 4,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "total_attempts": 28,
+      "total_crashes": 2,
+      "crash_rate": 0.0714,
+      "avg_result": 23.163,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 23.163,
+      "best_total": 28.83,
+      "best_move": 10,
+      "stdev_total": 3.352,
+      "heats": [
+        {
+          "heat_no": 5,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Kimo Verkerk",
+            "Jason van der Spuy"
+          ],
+          "moves": [
+            6.96,
+            6.28,
+            4.9,
+            5.58,
+            6.1,
+            6.08,
+            6.88
+          ],
+          "result": 20.12,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.12,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 6.96
+        },
+        {
+          "heat_no": 15,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 1,
+          "opponents": [
+            "Finn Flügel",
+            "Shahar Tsabary",
+            "Baptiste Jacquemain"
+          ],
+          "moves": [
+            6.24,
+            7.24,
+            0,
+            6.18,
+            6.26,
+            7.2,
+            7.16
+          ],
+          "result": 21.6,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.6,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.24
+        },
+        {
+          "heat_no": 18,
+          "round": "Semi Finals",
+          "round_depth": 4,
+          "placement": 1,
+          "opponents": [
+            "Leonardo Casati",
+            "Cohan van Dijk",
+            "Andrea Principi"
+          ],
+          "moves": [
+            6.9,
+            0,
+            7.13,
+            6.93,
+            7.77,
+            6.8,
+            7.2
+          ],
+          "result": 22.1,
+          "auto_imp": null,
+          "impression": null,
+          "total": 22.1,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.77
+        },
+        {
+          "heat_no": 19,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 1,
+          "opponents": [
+            "Finn Flügel",
+            "Leonardo Casati",
+            "Zac Adams"
+          ],
+          "moves": [
+            7.63,
+            7.23,
+            7.63,
+            9.5,
+            8.97,
+            9.33,
+            10
+          ],
+          "result": 28.83,
+          "auto_imp": null,
+          "impression": null,
+          "total": 28.83,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 10
+        }
+      ]
+    },
+    "Kimo Verkerk": {
+      "name": "Kimo Verkerk",
+      "nationality": "NL",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "total_attempts": 14,
+      "total_crashes": 10,
+      "crash_rate": 0.7143,
+      "avg_result": 7.47,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 7.47,
+      "best_total": 14.94,
+      "best_move": 6.02,
+      "stdev_total": 7.47,
+      "heats": [
+        {
+          "heat_no": 5,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Jamie Overbeek",
+            "Jason van der Spuy"
+          ],
+          "moves": [
+            4.68,
+            6.02,
+            0.84,
+            4.24,
+            0,
+            0,
+            0
+          ],
+          "result": 14.94,
+          "auto_imp": null,
+          "impression": null,
+          "total": 14.94,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.02
+        },
+        {
+          "heat_no": 11,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Nathan Texier",
+            "Maxwell Dahl",
+            "Stijn Mul"
+          ],
+          "moves": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "result": 0.0,
+          "auto_imp": null,
+          "impression": null,
+          "total": 0.0,
+          "crashes": 7,
+          "attempts": 7,
+          "best_move": 0
+        }
+      ]
+    },
+    "Jason van der Spuy": {
+      "name": "Jason van der Spuy",
+      "nationality": "ZA",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "total_attempts": 14,
+      "total_crashes": 4,
+      "crash_rate": 0.2857,
+      "avg_result": 15.95,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 15.95,
+      "best_total": 17.14,
+      "best_move": 6.02,
+      "stdev_total": 1.19,
+      "heats": [
+        {
+          "heat_no": 5,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Jamie Overbeek",
+            "Kimo Verkerk"
+          ],
+          "moves": [
+            5.06,
+            4.34,
+            5.36,
+            0,
+            0,
+            0,
+            3.9
+          ],
+          "result": 14.76,
+          "auto_imp": null,
+          "impression": null,
+          "total": 14.76,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 5.36
+        },
+        {
+          "heat_no": 12,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Cohan van Dijk",
+            "Baptiste Jacquemain",
+            "Giel Vlugt"
+          ],
+          "moves": [
+            5.92,
+            3.54,
+            5.48,
+            5.14,
+            6.02,
+            5.98,
+            0
+          ],
+          "result": 17.14,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.14,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.02
+        }
+      ]
+    },
+    "Finn Flügel": {
+      "name": "Finn Flügel",
+      "nationality": "DE",
+      "n_heats": 4,
+      "wins": 1,
+      "max_round_depth": 5,
+      "max_round": "Final",
+      "total_attempts": 28,
+      "total_crashes": 9,
+      "crash_rate": 0.3214,
+      "avg_result": 21.858,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 21.858,
+      "best_total": 24.53,
+      "best_move": 9.23,
+      "stdev_total": 1.593,
+      "heats": [
+        {
+          "heat_no": 6,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Nathan Texier",
+            "Giel Vlugt"
+          ],
+          "moves": [
+            6.4,
+            5.76,
+            5.1,
+            7.34,
+            7.24,
+            0,
+            0
+          ],
+          "result": 20.98,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.98,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.34
+        },
+        {
+          "heat_no": 15,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 2,
+          "opponents": [
+            "Jamie Overbeek",
+            "Shahar Tsabary",
+            "Baptiste Jacquemain"
+          ],
+          "moves": [
+            5.7,
+            0,
+            6.76,
+            7.4,
+            6.96,
+            7.16,
+            0
+          ],
+          "result": 21.52,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.52,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.4
+        },
+        {
+          "heat_no": 17,
+          "round": "Semi Finals",
+          "round_depth": 4,
+          "placement": 2,
+          "opponents": [
+            "Zac Adams",
+            "Jeremy Burlando",
+            "Josué San Ferreira"
+          ],
+          "moves": [
+            5.37,
+            0,
+            5.8,
+            0,
+            8.63,
+            5.97,
+            0
+          ],
+          "result": 20.4,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.4,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 8.63
+        },
+        {
+          "heat_no": 19,
+          "round": "Final",
+          "round_depth": 5,
+          "placement": 2,
+          "opponents": [
+            "Jamie Overbeek",
+            "Leonardo Casati",
+            "Zac Adams"
+          ],
+          "moves": [
+            0,
+            0,
+            5.5,
+            7.57,
+            7.73,
+            7.57,
+            9.23
+          ],
+          "result": 24.53,
+          "auto_imp": null,
+          "impression": null,
+          "total": 24.53,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 9.23
+        }
+      ]
+    },
+    "Nathan Texier": {
+      "name": "Nathan Texier",
+      "nationality": "FR",
+      "n_heats": 3,
+      "wins": 1,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "total_attempts": 21,
+      "total_crashes": 5,
+      "crash_rate": 0.2381,
+      "avg_result": 19.673,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 19.673,
+      "best_total": 20.9,
+      "best_move": 7.26,
+      "stdev_total": 0.966,
+      "heats": [
+        {
+          "heat_no": 6,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Finn Flügel",
+            "Giel Vlugt"
+          ],
+          "moves": [
+            6.02,
+            5.4,
+            5.18,
+            5.9,
+            6.62,
+            5.04,
+            0
+          ],
+          "result": 18.54,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.54,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.62
+        },
+        {
+          "heat_no": 11,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Maxwell Dahl",
+            "Stijn Mul",
+            "Kimo Verkerk"
+          ],
+          "moves": [
+            6.04,
+            6.8,
+            6.32,
+            5.52,
+            0,
+            6.46,
+            0
+          ],
+          "result": 19.58,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.58,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.8
+        },
+        {
+          "heat_no": 13,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 3,
+          "opponents": [
+            "Jeremy Burlando",
+            "Leonardo Casati",
+            "Eliott Bouton"
+          ],
+          "moves": [
+            7.04,
+            6.6,
+            6.6,
+            5.4,
+            0,
+            0,
+            7.26
+          ],
+          "result": 20.9,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.9,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.26
+        }
+      ]
+    },
+    "Giel Vlugt": {
+      "name": "Giel Vlugt",
+      "nationality": "NL",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "total_attempts": 14,
+      "total_crashes": 10,
+      "crash_rate": 0.7143,
+      "avg_result": 7.69,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 7.69,
+      "best_total": 15.38,
+      "best_move": 5.46,
+      "stdev_total": 7.69,
+      "heats": [
+        {
+          "heat_no": 6,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Finn Flügel",
+            "Nathan Texier"
+          ],
+          "moves": [
+            5.46,
+            5.18,
+            0,
+            4.74,
+            4.74,
+            0,
+            0
+          ],
+          "result": 15.38,
+          "auto_imp": null,
+          "impression": null,
+          "total": 15.38,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 5.46
+        },
+        {
+          "heat_no": 12,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 4,
+          "opponents": [
+            "Cohan van Dijk",
+            "Baptiste Jacquemain",
+            "Jason van der Spuy"
+          ],
+          "moves": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "result": 0.0,
+          "auto_imp": null,
+          "impression": null,
+          "total": 0.0,
+          "crashes": 7,
+          "attempts": 7,
+          "best_move": 0
+        }
+      ]
+    },
+    "Josué San Ferreira": {
+      "name": "Josué San Ferreira",
+      "nationality": "BR",
+      "n_heats": 3,
+      "wins": 1,
+      "max_round_depth": 4,
+      "max_round": "Semi Finals",
+      "total_attempts": 22,
+      "total_crashes": 4,
+      "crash_rate": 0.1818,
+      "avg_result": 19.637,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 19.637,
+      "best_total": 22.06,
+      "best_move": 7.8,
+      "stdev_total": 2.062,
+      "heats": [
+        {
+          "heat_no": 7,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Baptiste Jacquemain",
+            "Stijn Mul"
+          ],
+          "moves": [
+            4.7,
+            3,
+            5.88,
+            6.24,
+            0,
+            2.84,
+            4.9
+          ],
+          "result": 17.02,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.02,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.24
+        },
+        {
+          "heat_no": 16,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 2,
+          "opponents": [
+            "Andrea Principi",
+            "Lorenzo Casati",
+            "Maxwell Dahl"
+          ],
+          "moves": [
+            6.1,
+            6.8,
+            5.24,
+            1.32,
+            7.46,
+            6.74,
+            7.8,
+            0
+          ],
+          "result": 22.06,
+          "auto_imp": null,
+          "impression": null,
+          "total": 22.06,
+          "crashes": 1,
+          "attempts": 8,
+          "best_move": 7.8
+        },
+        {
+          "heat_no": 17,
+          "round": "Semi Finals",
+          "round_depth": 4,
+          "placement": 4,
+          "opponents": [
+            "Zac Adams",
+            "Finn Flügel",
+            "Jeremy Burlando"
+          ],
+          "moves": [
+            6.33,
+            5.33,
+            7.37,
+            0.93,
+            6.13,
+            0,
+            0
+          ],
+          "result": 19.83,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.83,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.37
+        }
+      ]
+    },
+    "Baptiste Jacquemain": {
+      "name": "Baptiste Jacquemain",
+      "nationality": "FR",
+      "n_heats": 3,
+      "wins": 0,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "total_attempts": 21,
+      "total_crashes": 8,
+      "crash_rate": 0.381,
+      "avg_result": 17.06,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 17.06,
+      "best_total": 17.7,
+      "best_move": 6.36,
+      "stdev_total": 0.863,
+      "heats": [
+        {
+          "heat_no": 7,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Josué San Ferreira",
+            "Stijn Mul"
+          ],
+          "moves": [
+            5.98,
+            4.42,
+            0,
+            0,
+            5.44,
+            4.12,
+            0
+          ],
+          "result": 15.84,
+          "auto_imp": null,
+          "impression": null,
+          "total": 15.84,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 5.98
+        },
+        {
+          "heat_no": 12,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Cohan van Dijk",
+            "Jason van der Spuy",
+            "Giel Vlugt"
+          ],
+          "moves": [
+            3.78,
+            0,
+            5.4,
+            5.94,
+            6.36,
+            0,
+            0
+          ],
+          "result": 17.7,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.7,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.36
+        },
+        {
+          "heat_no": 15,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 4,
+          "opponents": [
+            "Jamie Overbeek",
+            "Finn Flügel",
+            "Shahar Tsabary"
+          ],
+          "moves": [
+            6.1,
+            1.84,
+            5.66,
+            0,
+            5.88,
+            0.78,
+            0
+          ],
+          "result": 17.64,
+          "auto_imp": null,
+          "impression": null,
+          "total": 17.64,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.1
+        }
+      ]
+    },
+    "Stijn Mul": {
+      "name": "Stijn Mul",
+      "nationality": "NL",
+      "n_heats": 2,
+      "wins": 0,
+      "max_round_depth": 2,
+      "max_round": "Round 2",
+      "total_attempts": 14,
+      "total_crashes": 2,
+      "crash_rate": 0.1429,
+      "avg_result": 16.08,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 16.08,
+      "best_total": 18.14,
+      "best_move": 6.38,
+      "stdev_total": 2.06,
+      "heats": [
+        {
+          "heat_no": 7,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Josué San Ferreira",
+            "Baptiste Jacquemain"
+          ],
+          "moves": [
+            5.12,
+            4.58,
+            0,
+            2.9,
+            3.56,
+            4.32,
+            3.54
+          ],
+          "result": 14.02,
+          "auto_imp": null,
+          "impression": null,
+          "total": 14.02,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 5.12
+        },
+        {
+          "heat_no": 11,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 3,
+          "opponents": [
+            "Nathan Texier",
+            "Maxwell Dahl",
+            "Kimo Verkerk"
+          ],
+          "moves": [
+            5.84,
+            5.4,
+            5.66,
+            5.92,
+            5.7,
+            0,
+            6.38
+          ],
+          "result": 18.14,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.14,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.38
+        }
+      ]
+    },
+    "Lorenzo Casati": {
+      "name": "Lorenzo Casati",
+      "nationality": "ES",
+      "n_heats": 2,
+      "wins": 1,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "total_attempts": 15,
+      "total_crashes": 0,
+      "crash_rate": 0.0,
+      "avg_result": 20.81,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 20.81,
+      "best_total": 21.62,
+      "best_move": 7.62,
+      "stdev_total": 0.81,
+      "heats": [
+        {
+          "heat_no": 8,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 1,
+          "opponents": [
+            "Cohan van Dijk",
+            "Maxwell Dahl"
+          ],
+          "moves": [
+            5.02,
+            6.22,
+            5.96,
+            6.6,
+            6.3,
+            6.5,
+            6.9
+          ],
+          "result": 20.0,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.0,
+          "crashes": 0,
+          "attempts": 7,
+          "best_move": 6.9
+        },
+        {
+          "heat_no": 16,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 3,
+          "opponents": [
+            "Andrea Principi",
+            "Josué San Ferreira",
+            "Maxwell Dahl"
+          ],
+          "moves": [
+            6.54,
+            6.98,
+            7.02,
+            6.72,
+            7.62,
+            6.8,
+            6.52,
+            5.76
+          ],
+          "result": 21.62,
+          "auto_imp": null,
+          "impression": null,
+          "total": 21.62,
+          "crashes": 0,
+          "attempts": 8,
+          "best_move": 7.62
+        }
+      ]
+    },
+    "Cohan van Dijk": {
+      "name": "Cohan van Dijk",
+      "nationality": "NL",
+      "n_heats": 4,
+      "wins": 1,
+      "max_round_depth": 4,
+      "max_round": "Semi Finals",
+      "total_attempts": 28,
+      "total_crashes": 5,
+      "crash_rate": 0.1786,
+      "avg_result": 19.48,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 19.48,
+      "best_total": 19.82,
+      "best_move": 7.4,
+      "stdev_total": 0.308,
+      "heats": [
+        {
+          "heat_no": 8,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 2,
+          "opponents": [
+            "Lorenzo Casati",
+            "Maxwell Dahl"
+          ],
+          "moves": [
+            5.52,
+            5.58,
+            5.42,
+            7.02,
+            0,
+            5.28,
+            7.12
+          ],
+          "result": 19.72,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.72,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.12
+        },
+        {
+          "heat_no": 12,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 1,
+          "opponents": [
+            "Baptiste Jacquemain",
+            "Jason van der Spuy",
+            "Giel Vlugt"
+          ],
+          "moves": [
+            3.72,
+            0,
+            6.53,
+            4.48,
+            4.83,
+            6.06,
+            6.46
+          ],
+          "result": 19.05,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.05,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 6.53
+        },
+        {
+          "heat_no": 14,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 2,
+          "opponents": [
+            "Zac Adams",
+            "Marten Koblischke",
+            "Luca Ceruti"
+          ],
+          "moves": [
+            7.2,
+            6.1,
+            6.34,
+            6.28,
+            0,
+            4.78,
+            0
+          ],
+          "result": 19.82,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.82,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 7.2
+        },
+        {
+          "heat_no": 18,
+          "round": "Semi Finals",
+          "round_depth": 4,
+          "placement": 3,
+          "opponents": [
+            "Jamie Overbeek",
+            "Leonardo Casati",
+            "Andrea Principi"
+          ],
+          "moves": [
+            6.2,
+            0,
+            6.67,
+            5.27,
+            4.77,
+            7.4,
+            3.27
+          ],
+          "result": 19.33,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.33,
+          "crashes": 1,
+          "attempts": 7,
+          "best_move": 7.4
+        }
+      ]
+    },
+    "Maxwell Dahl": {
+      "name": "Maxwell Dahl",
+      "nationality": "DK",
+      "n_heats": 3,
+      "wins": 0,
+      "max_round_depth": 3,
+      "max_round": "Round 3",
+      "total_attempts": 22,
+      "total_crashes": 7,
+      "crash_rate": 0.3182,
+      "avg_result": 19.493,
+      "avg_auto_imp": null,
+      "avg_impression": null,
+      "avg_total": 19.493,
+      "best_total": 20.68,
+      "best_move": 7.2,
+      "stdev_total": 0.9,
+      "heats": [
+        {
+          "heat_no": 8,
+          "round": "Round 1",
+          "round_depth": 1,
+          "placement": 3,
+          "opponents": [
+            "Lorenzo Casati",
+            "Cohan van Dijk"
+          ],
+          "moves": [
+            4.16,
+            4.26,
+            0,
+            6.6,
+            5.98,
+            5.92,
+            0
+          ],
+          "result": 18.5,
+          "auto_imp": null,
+          "impression": null,
+          "total": 18.5,
+          "crashes": 2,
+          "attempts": 7,
+          "best_move": 6.6
+        },
+        {
+          "heat_no": 11,
+          "round": "Round 2",
+          "round_depth": 2,
+          "placement": 2,
+          "opponents": [
+            "Nathan Texier",
+            "Stijn Mul",
+            "Kimo Verkerk"
+          ],
+          "moves": [
+            0,
+            5.42,
+            6.14,
+            0,
+            6.38,
+            6.78,
+            0
+          ],
+          "result": 19.3,
+          "auto_imp": null,
+          "impression": null,
+          "total": 19.3,
+          "crashes": 3,
+          "attempts": 7,
+          "best_move": 6.78
+        },
+        {
+          "heat_no": 16,
+          "round": "Round 3",
+          "round_depth": 3,
+          "placement": 4,
+          "opponents": [
+            "Andrea Principi",
+            "Josué San Ferreira",
+            "Lorenzo Casati"
+          ],
+          "moves": [
+            6,
+            7.2,
+            7.06,
+            0,
+            3.7,
+            4.84,
+            6.42,
+            0
+          ],
+          "result": 20.68,
+          "auto_imp": null,
+          "impression": null,
+          "total": 20.68,
+          "crashes": 2,
+          "attempts": 8,
+          "best_move": 7.2
+        }
+      ]
+    }
+  },
+  "field": {
+    "avg_result": 18.049,
+    "avg_auto_imp": null,
+    "avg_impression": null,
+    "avg_total": 18.049,
+    "crash_rate": 0.2526,
+    "best_move": 7.156,
+    "stdev_total": 1.786,
+    "n_athletes": 24
+  },
+  "winner": "Jamie Overbeek",
+  "schema_note": "heatscoring.com source with no Auto Imp / Impression bonus for this event: Total == Result (top-3 sum of non-crash moves). Those fields are present but null, not zero, since the event doesn't use them."
+}
