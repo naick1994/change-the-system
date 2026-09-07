@@ -5,7 +5,7 @@ import nickAvatar from '@/assets/nick-avatar.jpg';
 export function Footer() {
   return (
     <footer className="relative bg-background border-t border-border py-8">
-      <div className="container mx-auto px-4 max-w-5xl text-center">
+      <div className="container mx-auto px-6 max-w-6xl text-center">
         <a
           href="https://naick1994.github.io/about-nick/about-nick"
           target="_blank"

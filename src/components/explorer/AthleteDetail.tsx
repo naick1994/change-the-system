@@ -1,6 +1,6 @@
 import type { AthleteProfile, FieldStats, Heat } from '@/types/bigAirEvent';
-import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { SectionHead } from '@/components/SectionHead';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { fmt, pct, rankOf, delta, raceStandings, roundShort, eventRounds, ordinal } from './format';
 import { Avatar } from './Avatar';
@@ -80,7 +80,7 @@ export function AthleteDetail({
         <ArrowLeft className="w-4 h-4 mr-1.5" /> Back to leaderboard
       </Button>
 
-      <div className="flex items-start justify-between gap-4 flex-wrap mb-5">
+      <div className="flex items-start justify-between gap-4 flex-wrap mb-6">
         <div className="flex items-center gap-4">
           <Avatar name={name} nationality={p.nationality} size={64} />
           <div>
@@ -101,32 +101,32 @@ export function AthleteDetail({
             <div className="text-xs text-muted-foreground mt-0.5">{p.n_heats} heats played</div>
           </div>
         </div>
-        <div className="text-xs px-3 py-1.5 rounded-full border border-border text-muted-foreground">
+        <div className="text-xs font-mono text-muted-foreground">
           #{rankOf(names, profiles, name, rankKey, true)} of {names.length} by stats average
         </div>
       </div>
 
-      <Card className="p-4 mb-6 flex items-center justify-center overflow-x-auto">
+      <div className="flex items-center justify-center overflow-x-auto py-4 border-y border-border mb-8">
         <RoundLadder
           rounds={rounds}
           athleteHeats={p.heats}
           reachedDepth={p.max_round_depth}
           won={isWinner}
         />
-      </Card>
+      </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 border-t border-l border-border mb-10">
         {statCells.map((c) => (
-          <Card key={c.l} className="p-4">
+          <div key={c.l} className="p-4 border-r border-b border-border">
             <div className="text-xl font-bold tabular-nums">{c.v}</div>
             <div className="text-xs text-muted-foreground mt-1 leading-snug">{c.l}</div>
             {c.d && <div className="text-xs mt-1.5">{c.d}</div>}
-          </Card>
+          </div>
         ))}
       </div>
 
       {!isWinner && (
-        <Card className="p-4 mb-8 text-sm text-muted-foreground">
+        <p className="mb-10 text-sm text-muted-foreground border-l-2 border-border pl-4">
           {rich ? (
             <>
               <strong className="text-foreground">Vs the event winner ({winner}):</strong> avg total {fmt(p.avg_total!)} vs {fmt(profiles[winner].avg_total!)}
@@ -138,41 +138,41 @@ export function AthleteDetail({
               <strong className="text-foreground">Vs the event winner ({winner}):</strong> avg score {fmt(p.avg_score!)} vs {fmt(profiles[winner].avg_score!)}
             </>
           )}
-        </Card>
+        </p>
       )}
 
-      <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-3">Score breakdown, heat by heat</h3>
-      <Card className="p-4 mb-8 h-[280px]">
+      <SectionHead>Score breakdown, heat by heat</SectionHead>
+      <div className="h-[280px] mb-10">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
             <XAxis dataKey="heat" tick={{ fontSize: 11, fill: 'hsl(var(--muted-foreground))' }} />
             <YAxis tick={{ fontSize: 11, fill: 'hsl(var(--muted-foreground))' }} />
-            <Tooltip contentStyle={{ background: 'hsl(var(--popover))', border: '1px solid hsl(var(--border))', borderRadius: 8, fontSize: 12 }} />
+            <Tooltip contentStyle={{ background: 'hsl(var(--popover))', border: '1px solid hsl(var(--border))', borderRadius: 6, fontSize: 12 }} />
             <Legend wrapperStyle={{ fontSize: 12 }} />
             {rich ? (
               hasBonus ? (
                 <>
                   <Bar dataKey="Result" stackId="s" fill={CHART_COLORS.result} />
                   <Bar dataKey="Auto Imp" stackId="s" fill={CHART_COLORS.autoimp} />
-                  <Bar dataKey="Impression" stackId="s" fill={CHART_COLORS.impress} radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="Impression" stackId="s" fill={CHART_COLORS.impress} />
                 </>
               ) : (
-                <Bar dataKey="Result" fill={CHART_COLORS.result} radius={[4, 4, 0, 0]} />
+                <Bar dataKey="Result" fill={CHART_COLORS.result} />
               )
             ) : (
-              <Bar dataKey="Score" fill={CHART_COLORS.score} radius={[4, 4, 0, 0]} />
+              <Bar dataKey="Score" fill={CHART_COLORS.score} />
             )}
           </BarChart>
         </ResponsiveContainer>
-      </Card>
+      </div>
 
-      <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-3">All heats played</h3>
-      <div className="space-y-3 mb-8">
+      <SectionHead>All heats played</SectionHead>
+      <div className="divide-y divide-border border-t border-border mb-8">
         {p.heats.map((h) => (
-          <div key={h.heat_no} className="border border-border rounded-lg p-3">
+          <div key={h.heat_no} className="py-4">
             <div className="flex items-center gap-3 flex-wrap mb-2.5">
-              <div className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${h.placement === 1 ? 'bg-primary/15 text-primary' : 'bg-muted text-muted-foreground'}`}>
+              <div className={`shrink-0 px-2.5 py-1 text-xs font-semibold ${h.placement === 1 ? 'bg-primary/15 text-primary' : 'bg-muted text-muted-foreground'}`}>
                 {ordinal(h.placement)}
               </div>
               <div className="text-xs text-muted-foreground shrink-0">{roundShort(h.round)} · Heat {h.heat_no}</div>
@@ -204,7 +204,7 @@ export function AthleteDetail({
             )}
 
             {rich && h.moves && (
-              <div className="mt-2 pt-2 border-t border-border/60">
+              <div className="mt-2 pt-2">
                 <MoveChips moves={h.moves} />
               </div>
             )}

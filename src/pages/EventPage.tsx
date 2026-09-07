@@ -25,7 +25,7 @@ export default function EventPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="container mx-auto px-4 max-w-5xl py-10">
+      <div className="container mx-auto px-6 max-w-6xl py-14">
         <Link to="/competitions" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6">
           <ArrowLeft className="w-3.5 h-3.5" /> All competitions
         </Link>

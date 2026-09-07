@@ -14,13 +14,13 @@ export function RaceStandings({
   const rows = raceStandings(names, profiles);
 
   return (
-    <div className="rounded-lg border border-border overflow-hidden">
+    <div className="divide-y divide-border border-t border-border">
       {rows.map((row) => (
         <button
           key={row.name}
           type="button"
           onClick={() => onSelectAthlete(row.name)}
-          className="w-full flex items-center gap-3 px-3 py-2.5 border-b border-border last:border-0 hover:bg-card/40 transition-colors text-left"
+          className="w-full flex items-center gap-3 py-2.5 hover:bg-card/30 transition-colors text-left -mx-2 px-2"
         >
           <span className="w-8 shrink-0 text-center font-bold tabular-nums text-muted-foreground">
             {MEDAL[row.rank] ?? row.rank}

@@ -1,6 +1,6 @@
 import type { AthleteProfile } from '@/types/bigAirEvent';
-import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { SectionHead } from '@/components/SectionHead';
 import { RadarChart, PolarGrid, PolarAngleAxis, Radar, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import { fmt, pct, delta, roundShort } from './format';
 import { Avatar } from './Avatar';
@@ -84,7 +84,7 @@ function SlotPicker({
   onPick: (name: string) => void;
 }) {
   return (
-    <Card className="p-4 border-dashed relative" style={{ borderColor: `${color}80` }}>
+    <div className="p-4 border border-dashed" style={{ borderColor: `${color}80` }}>
       <div className="flex items-center gap-2 mb-2">
         <Users className="w-4 h-4" style={{ color }} />
         <span className="text-sm font-medium" style={{ color }}>{label}</span>
@@ -93,16 +93,16 @@ function SlotPicker({
         <select
           value=""
           onChange={(e) => e.target.value && onPick(e.target.value)}
-          className="w-full appearance-none bg-muted border border-border rounded-md px-3 py-2 text-sm text-foreground cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary"
+          className="w-full appearance-none bg-transparent border-b border-border px-0 py-2 text-sm text-foreground cursor-pointer focus:outline-none focus:border-primary"
         >
           <option value="" disabled>Pick an athlete…</option>
           {options.map((n) => (
             <option key={n} value={n}>{n}</option>
           ))}
         </select>
-        <ChevronDown className="w-4 h-4 text-muted-foreground absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+        <ChevronDown className="w-4 h-4 text-muted-foreground absolute right-1 top-1/2 -translate-y-1/2 pointer-events-none" />
       </div>
-    </Card>
+    </div>
   );
 }
 
@@ -121,7 +121,7 @@ export function Compare({
   const sortedNames = [...names].sort((a, b) => a.localeCompare(b));
 
   const slots = (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
       {([0, 1] as const).map((slot) => {
         const name = compare[slot];
         const color = slot === 0 ? COLOR_A : COLOR_B;
@@ -139,7 +139,7 @@ export function Compare({
         }
         const p = profiles[name];
         return (
-          <Card key={slot} className="p-4" style={{ borderColor: color }}>
+          <div key={slot} className="p-4 border-b-2" style={{ borderColor: color }}>
             <div className="flex items-center gap-3">
               <Avatar name={name} nationality={p.nationality} size={40} />
               <div>
@@ -148,7 +148,7 @@ export function Compare({
               </div>
             </div>
             <Button variant="ghost" size="sm" className="mt-2 -ml-2 text-xs h-7" onClick={() => onRemove(name)}>Change</Button>
-          </Card>
+          </div>
         );
       })}
     </div>
@@ -158,9 +158,7 @@ export function Compare({
     return (
       <div>
         {slots}
-        <Card className="p-8 text-center">
-          <p className="text-sm text-muted-foreground">Pick two athletes above to compare them head-to-head.</p>
-        </Card>
+        <p className="py-10 text-center text-sm text-muted-foreground border-t border-border">Pick two athletes above to compare them head-to-head.</p>
       </div>
     );
   }
@@ -180,36 +178,34 @@ export function Compare({
     <div>
       {slots}
 
-      <Card className="p-4 mb-6 overflow-x-auto">
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="border-b border-border">
-              <th className="text-left font-semibold px-2 py-2">Metric</th>
-              <th className="text-right font-semibold px-2 py-2" style={{ color: COLOR_A }}>{nameA}</th>
-              <th className="text-right font-semibold px-2 py-2" style={{ color: COLOR_B }}>{nameB}</th>
-              <th className="text-right font-semibold px-2 py-2">Delta</th>
-            </tr>
-          </thead>
-          <tbody>
-            {tableRows.map((row) => {
-              const va = A[row.key] as number;
-              const vb = B[row.key] as number;
-              const d = delta(va, vb, row.higherIsBetter, row.format);
-              return (
-                <tr key={row.key} className="border-b border-border last:border-0">
-                  <td className="px-2 py-2 text-muted-foreground">{row.label}</td>
-                  <td className="px-2 py-2 text-right tabular-nums">{row.format(va)}</td>
-                  <td className="px-2 py-2 text-right tabular-nums">{row.format(vb)}</td>
-                  <td className={`px-2 py-2 text-right tabular-nums ${d.positive ? 'text-emerald-500' : 'text-red-400'}`}>{d.text}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </Card>
+      <table className="w-full text-sm mb-10">
+        <thead>
+          <tr className="border-b border-t border-border">
+            <th className="text-left font-semibold px-2 py-2">Metric</th>
+            <th className="text-right font-semibold px-2 py-2" style={{ color: COLOR_A }}>{nameA}</th>
+            <th className="text-right font-semibold px-2 py-2" style={{ color: COLOR_B }}>{nameB}</th>
+            <th className="text-right font-semibold px-2 py-2">Delta</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tableRows.map((row) => {
+            const va = A[row.key] as number;
+            const vb = B[row.key] as number;
+            const d = delta(va, vb, row.higherIsBetter, row.format);
+            return (
+              <tr key={row.key} className="border-b border-border last:border-0">
+                <td className="px-2 py-2 text-muted-foreground">{row.label}</td>
+                <td className="px-2 py-2 text-right tabular-nums">{row.format(va)}</td>
+                <td className="px-2 py-2 text-right tabular-nums">{row.format(vb)}</td>
+                <td className={`px-2 py-2 text-right tabular-nums ${d.positive ? 'text-emerald-500' : 'text-red-400'}`}>{d.text}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
 
-      <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-3 text-center">Overall profile (normalized against the field)</h3>
-      <Card className="p-4 h-[360px]">
+      <SectionHead className="justify-center">Overall profile (normalized against the field)</SectionHead>
+      <div className="h-[360px]">
         <ResponsiveContainer width="100%" height="100%">
           <RadarChart data={radarData}>
             <PolarGrid stroke="hsl(var(--border))" />
@@ -217,10 +213,10 @@ export function Compare({
             <Radar name={nameA} dataKey={nameA} stroke={COLOR_A} fill={COLOR_A} fillOpacity={0.25} />
             <Radar name={nameB} dataKey={nameB} stroke={COLOR_B} fill={COLOR_B} fillOpacity={0.25} />
             <Legend wrapperStyle={{ fontSize: 12 }} />
-            <Tooltip contentStyle={{ background: 'hsl(var(--popover))', border: '1px solid hsl(var(--border))', borderRadius: 8, fontSize: 12 }} />
+            <Tooltip contentStyle={{ background: 'hsl(var(--popover))', border: '1px solid hsl(var(--border))', borderRadius: 6, fontSize: 12 }} />
           </RadarChart>
         </ResponsiveContainer>
-      </Card>
+      </div>
     </div>
   );
 }
