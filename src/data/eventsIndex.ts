@@ -529,5 +529,11 @@ export function seasonFacts(): SeasonFact[] {
       detail: 'Population std. dev. of 3.19 across every recorded score, the tightest field of the season. GKA Mykonos Men was close behind at 3.20',
       slug: 'lords-of-tram-france-2026-women',
     },
+    {
+      label: 'Most international field',
+      value: '13 nations',
+      detail: 'GKA Mykonos Men drew riders from 13 different countries, the widest field of any single division this season',
+      slug: 'gka-big-air-mykonos-2026-men',
+    },
   ];
 }

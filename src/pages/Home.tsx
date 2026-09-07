@@ -24,7 +24,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { flagEmoji } from '@/components/explorer/format';
 import ATHLETE_BRANDS from '@/data/athleteBrands.json';
 import { useCountUp } from '@/hooks/useCountUp';
-import { Users, Flame, Globe2, Trophy, Swords, Wind, Award, Zap, Sparkles, ShieldCheck, Repeat, Scale, type LucideIcon } from 'lucide-react';
+import { Users, Flame, Globe2, Trophy, Swords, Wind, Award, Zap, Sparkles, ShieldCheck, Repeat, Scale, Compass, type LucideIcon } from 'lucide-react';
 
 const STAT_ICONS = { competitions: Trophy, uniqueRiders: Users, heats: Flame, countries: Globe2 };
 const RESULT_ICON: Record<string, string> = { Champion: '🏆', 'Runner-up': '🥈', '2nd place': '🥈', '3rd place': '🥉' };
@@ -41,6 +41,7 @@ const INSIGHT_STYLE: Record<string, { icon: LucideIcon; color: string }> = {
   'Most consistent rider': { icon: ShieldCheck, color: 'text-teal-400 bg-teal-400/10' },
   'Longest win streak': { icon: Repeat, color: 'text-lime-400 bg-lime-400/10' },
   'Most balanced event': { icon: Scale, color: 'text-cyan-400 bg-cyan-400/10' },
+  'Most international field': { icon: Compass, color: 'text-rose-400 bg-rose-400/10' },
 };
 
 const COMPOSITION_FOR_LABEL: Record<string, () => CompositionSegment[]> = {
