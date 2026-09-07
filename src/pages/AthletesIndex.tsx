@@ -1,22 +1,19 @@
 import { useEffect, useState } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { buildGlobalAthletes, type GlobalAthlete } from '@/data/globalAthletes';
 import { Avatar } from '@/components/explorer/Avatar';
+import { BrandBadge } from '@/components/BrandBadge';
 import { YearSelector } from '@/components/YearSelector';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from '@/components/ui/table';
 import { Waves, Search } from 'lucide-react';
 import ATHLETE_BRANDS from '@/data/athleteBrands.json';
 
-const MEDAL: Record<number, string> = { 1: '🥇', 2: '🥈', 3: '🥉' };
-const COMP_SHORT: Record<string, string> = {
-  'Cold Hawaii Big Air 2026': 'Cold Hawaii',
-  'Lords of Tram (GKA France) 2026': 'Lords of Tram',
-  'GKA Big Air Mykonos 2026': 'GKA Mykonos',
-};
-type Division = 'Overall' | 'Men' | 'Women';
-const DIVISIONS: Division[] = ['Overall', 'Men', 'Women'];
+type Division = 'Men' | 'Women';
+const DIVISIONS: Division[] = ['Men', 'Women'];
 
 export default function AthletesIndex() {
+  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const [athletes, setAthletes] = useState<GlobalAthlete[] | null>(null);
   const initialDivision = DIVISIONS.find((d) => d === searchParams.get('division')) ?? 'Men';
@@ -30,7 +27,7 @@ export default function AthletesIndex() {
   const q = query.trim().toLowerCase();
   const list =
     athletes
-      ?.filter((a) => division === 'Overall' || a.events[0]?.division === division)
+      ?.filter((a) => a.events[0]?.division === division)
       .filter((a) => {
         if (!q) return true;
         const brand = ATHLETE_BRANDS[a.name as keyof typeof ATHLETE_BRANDS] ?? '';
@@ -88,42 +85,49 @@ export default function AthletesIndex() {
           </div>
         ) : (
           <div className="rounded-lg border border-border overflow-hidden">
-            {list.map((a, i) => (
-              <Link
-                key={a.name}
-                to={`/athletes/${encodeURIComponent(a.name)}`}
-                className="flex items-center gap-3 px-4 py-3 border-b border-border last:border-0 hover:bg-card/40 transition-colors"
-              >
-                <span className="w-8 text-center font-bold tabular-nums text-muted-foreground shrink-0">{i + 1}</span>
-                <Avatar name={a.name} nationality={a.nationality} size={36} />
-                <div className="min-w-0 flex-1">
-                  <div className="font-medium truncate">
-                    {a.name}
-                    {ATHLETE_BRANDS[a.name as keyof typeof ATHLETE_BRANDS] && (
-                      <span className="text-xs text-muted-foreground font-normal ml-1.5">
-                        · {ATHLETE_BRANDS[a.name as keyof typeof ATHLETE_BRANDS]}
-                      </span>
-                    )}
-                  </div>
-                  <div className="flex flex-wrap gap-1.5 mt-1">
-                    {a.events.map((e) => (
-                      <span
-                        key={e.slug}
-                        title={`${e.competition} (${e.division}): ${e.resultLabel}`}
-                        className="inline-flex items-center gap-1 text-[11px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground whitespace-nowrap"
-                      >
-                        {MEDAL[e.rank] && <span>{MEDAL[e.rank]}</span>}
-                        {COMP_SHORT[e.competition] ?? e.competition}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="text-right shrink-0">
-                  <div className="font-display font-bold tabular-nums">{a.points.toLocaleString('en-US')}</div>
-                  <div className="text-[11px] text-muted-foreground">points</div>
-                </div>
-              </Link>
-            ))}
+            <Table>
+              <TableHeader>
+                <TableRow className="hover:bg-transparent border-border">
+                  <TableHead className="w-14 text-xs uppercase tracking-wide">Pos.</TableHead>
+                  <TableHead className="text-xs uppercase tracking-wide">Rider</TableHead>
+                  <TableHead className="text-xs uppercase tracking-wide">Nationality</TableHead>
+                  <TableHead className="text-xs uppercase tracking-wide">Brand</TableHead>
+                  <TableHead className="text-xs uppercase tracking-wide text-right">Pts.</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {list.map((a, i) => {
+                  const brand = ATHLETE_BRANDS[a.name as keyof typeof ATHLETE_BRANDS];
+                  return (
+                    <TableRow
+                      key={a.name}
+                      onClick={() => navigate(`/athletes/${encodeURIComponent(a.name)}`)}
+                      className="cursor-pointer border-border"
+                    >
+                      <TableCell className="font-bold tabular-nums text-muted-foreground">{i + 1}</TableCell>
+                      <TableCell>
+                        <div className="flex items-center gap-3">
+                          <Avatar name={a.name} nationality={a.nationality} size={32} />
+                          <span className="font-medium whitespace-nowrap">{a.name}</span>
+                        </div>
+                      </TableCell>
+                      <TableCell className="text-muted-foreground">{a.nationality}</TableCell>
+                      <TableCell>
+                        {brand ? (
+                          <div className="flex items-center gap-2">
+                            <BrandBadge brand={brand} size={22} />
+                            <span className="text-muted-foreground whitespace-nowrap">{brand}</span>
+                          </div>
+                        ) : (
+                          <span className="text-muted-foreground">-</span>
+                        )}
+                      </TableCell>
+                      <TableCell className="text-right font-display font-bold tabular-nums">{a.points.toLocaleString('en-US')}</TableCell>
+                    </TableRow>
+                  );
+                })}
+              </TableBody>
+            </Table>
           </div>
         )}
       </div>
